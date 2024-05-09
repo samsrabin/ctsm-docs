@@ -329,7 +329,7 @@ EOF
 &gt; ./mknoocnmap.pl -p 40,255 -n $GRIDNAME
 # Set pointer to MAPFILE just created that will be used later
 &gt; setenv MAPFILE `pwd`/map_${GRIDNAME}_noocean_to_${GRIDNAME}_nomask_aave_da_${CDATE}.nc
-# create the mapping files needed by mksurfdata_map.
+# create the mapping files needed by mksurfdata_esmf.
 &gt; cd ../.././mkmapdata
 &gt; setenv GRIDFILE ../mkmapgrids/SCRIPgrid_${GRIDNAME}_nomask_${CDATE}.nc
 &gt; ./mkmapdata.sh -r $GRIDNAME -f $GRIDFILE -t regional
@@ -344,7 +344,7 @@ EOF
 # Save the location where the domain file was created
 &gt; setenv GENDOM_PATH `pwd`
 # Finally create the surface dataset
-&gt; cd ../../../../lnd/clm/tools/|version|/mksurfdata_map/src
+&gt; cd ../../../../lnd/clm/tools/|version|/mksurfdata_esmf/src
 &gt; gmake
 &gt; cd ..
 &gt; ./mksurfdata.pl -r usrspec -usr_gname $GRIDNAME -usr_gdate $CDATE
@@ -362,7 +362,7 @@ EOF
 &gt; ./link_dirtree $CSMDATA $MYCSMDATA
 # Copy the file you created above to your new $MYCSMDATA location following the CLMUSRDAT
 # naming convention (leave off the creation date)
-&gt; cp $CESMROOT/$CTSMROOT/tools/mksurfdata_map/surfdata_${GRIDNAME}_simyr1850_$CDATE.nc \
+&gt; cp $CESMROOT/$CTSMROOT/tools/mksurfdata_esmf/surfdata_${GRIDNAME}_simyr1850_$CDATE.nc \
 $MYCSMDATA/lnd/clm2/surfdata_map/surfdata_${GRIDNAME}_simyr1850.nc
 &gt; cd $CESMROOT/scripts
 &gt; ./create_newcase -case my_usernldatasets_test -res CLM_USRDAT -compset I1850Clm50BgcCropCru \

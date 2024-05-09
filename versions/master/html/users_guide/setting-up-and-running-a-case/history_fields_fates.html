@@ -303,7 +303,16 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>AnnET</p></td>
+<tr class="row-even"><td><p>AZSUN</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>azimuth angle of the sun</p></td>
+<td><p>radians</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>AnnET</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -312,7 +321,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>BCDEP</p></td>
+<tr class="row-even"><td><p>BCDEP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -320,6 +329,33 @@ use_fates =  T</p>
 <td><p>total BC deposition (dry+wet) from atmosphere</p></td>
 <td><p>kg/m^2/s</p></td>
 <td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>BCPHIDRY</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>black carbon deposition (phidry) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>BCPHIWET</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>black carbon deposition (phiwet) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>BCPHODRY</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>black carbon deposition (phodry) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>BTRAN</p></td>
 <td><ul class="simple">
@@ -339,7 +375,88 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>COL_CTRUNC</p></td>
+<tr class="row-even"><td><p>CH4PROD</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Gridcell total production of CH4</p></td>
+<td><p>gC/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH4_EBUL_TOTAL_SAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>ebullition surface CH4 flux; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>CH4_EBUL_TOTAL_UNSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>ebullition surface CH4 flux; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH4_SURF_AERE_SAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>aerenchyma surface CH4 flux for inundated area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>CH4_SURF_AERE_UNSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>aerenchyma surface CH4 flux for non-inundated area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH4_SURF_DIFF_SAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>diffusive surface CH4 flux for inundated / lake area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>CH4_SURF_DIFF_UNSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>diffusive surface CH4 flux for non-inundated area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>CH4_SURF_EBUL_SAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>ebullition surface CH4 flux for inundated / lake area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>CH4_SURF_EBUL_UNSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>ebullition surface CH4 flux for non-inundated area; (+ to atm)</p></td>
+<td><p>mol/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>COL_CTRUNC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -348,7 +465,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>COL_NTRUNC</p></td>
+<tr class="row-even"><td><p>COL_NTRUNC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -357,7 +474,16 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>COSZEN</p></td>
+<tr class="row-odd"><td><p>COSZEN</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>cosine of solar zenith angle (downscaled if downscaling is activated)</p></td>
+<td><p>none</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>COSZEN_GRC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -492,6 +618,42 @@ use_fates =  T</p>
 <td><p>kg/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
+<tr class="row-odd"><td><p>DSTDRY1</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (dry1) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>DSTDRY2</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (dry2) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>DSTDRY3</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (dry3) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>DSTDRY4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (dry4) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
 <tr class="row-odd"><td><p>DSTFLXT</p></td>
 <td><ul class="simple">
 <li></li>
@@ -500,6 +662,42 @@ use_fates =  T</p>
 <td><p>total surface dust emission</p></td>
 <td><p>kg/m2/s</p></td>
 <td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>DSTWET1</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (wet1) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>DSTWET2</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (wet2) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>DSTWET3</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (wet3) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>DSTWET4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>dust deposition (wet4) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>DWT_CROPPROD1C_GAIN</p></td>
 <td><ul class="simple">
@@ -573,7 +771,16 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>DYN_COL_SOIL_ADJUSTMENTS_C</p></td>
+<tr class="row-even"><td><p>DYN_COL_ADJUSTMENTS_CH4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Adjustments in ch4 due to dynamic column areas; only makes sense at the column level: should n</p></td>
+<td><p>gC/m^2</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>DYN_COL_SOIL_ADJUSTMENTS_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -582,7 +789,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>DYN_COL_SOIL_ADJUSTMENTS_N</p></td>
+<tr class="row-even"><td><p>DYN_COL_SOIL_ADJUSTMENTS_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -591,7 +798,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>DYN_COL_SOIL_ADJUSTMENTS_NH4</p></td>
+<tr class="row-odd"><td><p>DYN_COL_SOIL_ADJUSTMENTS_NH4</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -600,7 +807,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>DYN_COL_SOIL_ADJUSTMENTS_NO3</p></td>
+<tr class="row-even"><td><p>DYN_COL_SOIL_ADJUSTMENTS_NO3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -609,7 +816,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>EFLXBUILD</p></td>
+<tr class="row-odd"><td><p>EFLXBUILD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -618,7 +825,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>EFLX_DYNBAL</p></td>
+<tr class="row-even"><td><p>EFLX_DYNBAL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -627,7 +834,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>EFLX_GNET</p></td>
+<tr class="row-odd"><td><p>EFLX_GNET</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -636,7 +843,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>EFLX_GRND_LAKE</p></td>
+<tr class="row-even"><td><p>EFLX_GRND_LAKE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -645,7 +852,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>EFLX_LH_TOT</p></td>
+<tr class="row-odd"><td><p>EFLX_LH_TOT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -654,7 +861,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>EFLX_LH_TOT_ICE</p></td>
+<tr class="row-even"><td><p>EFLX_LH_TOT_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -663,7 +870,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>EFLX_LH_TOT_R</p></td>
+<tr class="row-odd"><td><p>EFLX_LH_TOT_R</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -672,7 +879,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>EFLX_LH_TOT_U</p></td>
+<tr class="row-even"><td><p>EFLX_LH_TOT_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -681,7 +888,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>EFLX_SOIL_GRND</p></td>
+<tr class="row-odd"><td><p>EFLX_SOIL_GRND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -690,7 +897,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>ELAI</p></td>
+<tr class="row-even"><td><p>ELAI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -699,7 +906,7 @@ use_fates =  T</p>
 <td><p>m^2/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>ERRH2O</p></td>
+<tr class="row-odd"><td><p>ERRH2O</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -708,7 +915,7 @@ use_fates =  T</p>
 <td><p>mm</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>ERRH2OSNO</p></td>
+<tr class="row-even"><td><p>ERRH2OSNO</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -717,7 +924,7 @@ use_fates =  T</p>
 <td><p>mm</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>ERRSEB</p></td>
+<tr class="row-odd"><td><p>ERRSEB</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -726,7 +933,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>ERRSOI</p></td>
+<tr class="row-even"><td><p>ERRSOI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -735,7 +942,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>ERRSOL</p></td>
+<tr class="row-odd"><td><p>ERRSOL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -744,7 +951,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>ESAI</p></td>
+<tr class="row-even"><td><p>ESAI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -753,7 +960,7 @@ use_fates =  T</p>
 <td><p>m^2/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AR</p></td>
+<tr class="row-odd"><td><p>FATES_AR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -762,7 +969,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AREA_PLANTS</p></td>
+<tr class="row-even"><td><p>FATES_AREA_PLANTS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -771,7 +978,7 @@ use_fates =  T</p>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AREA_TREES</p></td>
+<tr class="row-odd"><td><p>FATES_AREA_TREES</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -780,7 +987,7 @@ use_fates =  T</p>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AR_CANOPY</p></td>
+<tr class="row-even"><td><p>FATES_AR_CANOPY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -789,7 +996,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AR_UNDERSTORY</p></td>
+<tr class="row-odd"><td><p>FATES_AR_UNDERSTORY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -798,7 +1005,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AUTORESP</p></td>
+<tr class="row-even"><td><p>FATES_AUTORESP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -807,7 +1014,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AUTORESP_CANOPY</p></td>
+<tr class="row-odd"><td><p>FATES_AUTORESP_CANOPY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -816,7 +1023,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AUTORESP_SECONDARY</p></td>
+<tr class="row-even"><td><p>FATES_AUTORESP_SECONDARY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -825,7 +1032,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AUTORESP_USTORY</p></td>
+<tr class="row-odd"><td><p>FATES_AUTORESP_USTORY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -834,7 +1041,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_BA_WEIGHTED_HEIGHT</p></td>
+<tr class="row-even"><td><p>FATES_BA_WEIGHTED_HEIGHT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -843,7 +1050,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_BURNFRAC</p></td>
+<tr class="row-odd"><td><p>FATES_BURNFRAC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -852,7 +1059,7 @@ use_fates =  T</p>
 <td><p>s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CANOPY_SPREAD</p></td>
+<tr class="row-even"><td><p>FATES_CANOPY_SPREAD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -861,7 +1068,7 @@ use_fates =  T</p>
 <td></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CANOPY_VEGC</p></td>
+<tr class="row-odd"><td><p>FATES_CANOPY_VEGC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -870,7 +1077,7 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CA_WEIGHTED_HEIGHT</p></td>
+<tr class="row-even"><td><p>FATES_CA_WEIGHTED_HEIGHT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -879,7 +1086,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CBALANCE_ERROR</p></td>
+<tr class="row-odd"><td><p>FATES_CBALANCE_ERROR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -888,7 +1095,7 @@ use_fates =  T</p>
 <td><p>kg s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_COLD_STATUS</p></td>
+<tr class="row-even"><td><p>FATES_COLD_STATUS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -897,7 +1104,7 @@ use_fates =  T</p>
 <td></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CROOTMAINTAR</p></td>
+<tr class="row-odd"><td><p>FATES_CROOTMAINTAR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -906,7 +1113,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CROOT_ALLOC</p></td>
+<tr class="row-even"><td><p>FATES_CROOT_ALLOC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -915,7 +1122,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DAYSINCE_COLDLEAFOFF</p></td>
+<tr class="row-odd"><td><p>FATES_DAYSINCE_COLDLEAFOFF</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -924,7 +1131,7 @@ use_fates =  T</p>
 <td><p>days</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DAYSINCE_COLDLEAFON</p></td>
+<tr class="row-even"><td><p>FATES_DAYSINCE_COLDLEAFON</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -933,7 +1140,7 @@ use_fates =  T</p>
 <td><p>days</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DEMOTION_CARBONFLUX</p></td>
+<tr class="row-odd"><td><p>FATES_DEMOTION_CARBONFLUX</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -942,7 +1149,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_FIRE</p></td>
+<tr class="row-even"><td><p>FATES_DISTURBANCE_RATE_FIRE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -951,7 +1158,7 @@ use_fates =  T</p>
 <td><p>m2 m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DISTURBANCE_RATE_LOGGING</p></td>
+<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_LOGGING</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -960,43 +1167,7 @@ use_fates =  T</p>
 <td><p>m2 m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_P2P</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>disturbance rate from primary to primary lands</p></td>
-<td><p>m2 m-2 yr-1</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_DISTURBANCE_RATE_P2S</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>disturbance rate from primary to secondary lands</p></td>
-<td><p>m2 m-2 yr-1</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_POTENTIAL</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>potential (i.e., including unresolved) disturbance rate</p></td>
-<td><p>m2 m-2 yr-1</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_DISTURBANCE_RATE_S2S</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>disturbance rate from secondary to secondary lands</p></td>
-<td><p>m2 m-2 yr-1</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_TREEFALL</p></td>
+<tr class="row-even"><td><p>FATES_DISTURBANCE_RATE_TREEFALL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1005,7 +1176,7 @@ use_fates =  T</p>
 <td><p>m2 m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_EFFECT_WSPEED</p></td>
+<tr class="row-odd"><td><p>FATES_EFFECT_WSPEED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1014,7 +1185,7 @@ use_fates =  T</p>
 <td><p>m s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_EXCESS_RESP</p></td>
+<tr class="row-even"><td><p>FATES_EXCESS_RESP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1023,7 +1194,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FDI</p></td>
+<tr class="row-odd"><td><p>FATES_FDI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1032,7 +1203,7 @@ use_fates =  T</p>
 <td><p>1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FIRE_CLOSS</p></td>
+<tr class="row-even"><td><p>FATES_FIRE_CLOSS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1041,7 +1212,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FIRE_INTENSITY</p></td>
+<tr class="row-odd"><td><p>FATES_FIRE_INTENSITY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1050,7 +1221,7 @@ use_fates =  T</p>
 <td><p>J m-1 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FIRE_INTENSITY_BURNFRAC</p></td>
+<tr class="row-even"><td><p>FATES_FIRE_INTENSITY_BURNFRAC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1059,7 +1230,7 @@ use_fates =  T</p>
 <td><p>J m-1 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FRACTION</p></td>
+<tr class="row-odd"><td><p>FATES_FRACTION</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1068,7 +1239,7 @@ use_fates =  T</p>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOTC</p></td>
+<tr class="row-even"><td><p>FATES_FROOTC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1077,7 +1248,7 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOTMAINTAR</p></td>
+<tr class="row-odd"><td><p>FATES_FROOTMAINTAR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1086,7 +1257,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOT_ALLOC</p></td>
+<tr class="row-even"><td><p>FATES_FROOT_ALLOC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1095,7 +1266,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FUELCONSUMED</p></td>
+<tr class="row-odd"><td><p>FATES_FUELCONSUMED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1104,7 +1275,7 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FUEL_AMOUNT</p></td>
+<tr class="row-even"><td><p>FATES_FUEL_AMOUNT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1113,7 +1284,7 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FUEL_BULKD</p></td>
+<tr class="row-odd"><td><p>FATES_FUEL_BULKD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1122,7 +1293,7 @@ use_fates =  T</p>
 <td><p>kg m-3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FUEL_EFF_MOIST</p></td>
+<tr class="row-even"><td><p>FATES_FUEL_EFF_MOIST</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1131,7 +1302,7 @@ use_fates =  T</p>
 <td><p>m3 m-3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FUEL_MEF</p></td>
+<tr class="row-odd"><td><p>FATES_FUEL_MEF</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1140,7 +1311,7 @@ use_fates =  T</p>
 <td><p>m3 m-3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FUEL_SAV</p></td>
+<tr class="row-even"><td><p>FATES_FUEL_SAV</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1149,7 +1320,7 @@ use_fates =  T</p>
 <td><p>m-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GDD</p></td>
+<tr class="row-odd"><td><p>FATES_GDD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1158,7 +1329,7 @@ use_fates =  T</p>
 <td><p>degree_Celsius</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GPP</p></td>
+<tr class="row-even"><td><p>FATES_GPP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1167,7 +1338,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GPP_CANOPY</p></td>
+<tr class="row-odd"><td><p>FATES_GPP_CANOPY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1176,7 +1347,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GPP_SECONDARY</p></td>
+<tr class="row-even"><td><p>FATES_GPP_SECONDARY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1185,7 +1356,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GPP_USTORY</p></td>
+<tr class="row-odd"><td><p>FATES_GPP_USTORY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1194,7 +1365,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GROWTH_RESP</p></td>
+<tr class="row-even"><td><p>FATES_GROWTH_RESP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1203,7 +1374,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GROWTH_RESP_SECONDARY</p></td>
+<tr class="row-odd"><td><p>FATES_GROWTH_RESP_SECONDARY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1212,7 +1383,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_HARVEST_CARBON_FLUX</p></td>
+<tr class="row-even"><td><p>FATES_HARVEST_CARBON_FLUX</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1221,7 +1392,7 @@ use_fates =  T</p>
 <td><p>kg m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_HARVEST_DEBT</p></td>
+<tr class="row-odd"><td><p>FATES_HARVEST_DEBT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1230,7 +1401,7 @@ use_fates =  T</p>
 <td><p>kg C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_HARVEST_DEBT_SEC</p></td>
+<tr class="row-even"><td><p>FATES_HARVEST_DEBT_SEC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1239,7 +1410,7 @@ use_fates =  T</p>
 <td><p>kg C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_HET_RESP</p></td>
+<tr class="row-odd"><td><p>FATES_HET_RESP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1248,13 +1419,22 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_IGNITIONS</p></td>
+<tr class="row-even"><td><p>FATES_IGNITIONS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>number of successful fire ignitions per m2 land area per second</p></td>
 <td><p>m-2 s-1</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_L2FR</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>The leaf to fineroot biomass multiplier for target allometry</p></td>
+<td><p>kg kg-1</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-even"><td><p>FATES_LAI</p></td>
@@ -1363,7 +1543,7 @@ use_fates =  T</p>
 </td>
 <td><p>diagnostic maintenance respiration if the low-carbon-storage reduction is ignored</p></td>
 <td><p>kg m-2 s-1</p></td>
-<td><p>F</p></td>
+<td><p>T</p></td>
 </tr>
 <tr class="row-even"><td><p>FATES_MORTALITY_CFLUX_CANOPY</p></td>
 <td><ul class="simple">
@@ -1437,7 +1617,19 @@ use_fates =  T</p>
 <td></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NONSTRUCTC</p></td>
+<tr class="row-even"><td><p>FATES_NIR_RAD_ERROR</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>mean two-stream solver error for NIR</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_NONSTRUCTC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1446,7 +1638,7 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPATCHES</p></td>
+<tr class="row-even"><td><p>FATES_NPATCHES</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1455,7 +1647,7 @@ use_fates =  T</p>
 <td></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPATCHES_SECONDARY</p></td>
+<tr class="row-odd"><td><p>FATES_NPATCHES_SECONDARY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1464,7 +1656,7 @@ use_fates =  T</p>
 <td></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP</p></td>
+<tr class="row-even"><td><p>FATES_NPP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1473,7 +1665,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPP_SECONDARY</p></td>
+<tr class="row-odd"><td><p>FATES_NPP_SECONDARY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1482,7 +1674,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PRIMARY_PATCHFUSION_ERR</p></td>
+<tr class="row-even"><td><p>FATES_PRIMARY_PATCHFUSION_ERR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1491,22 +1683,13 @@ use_fates =  T</p>
 <td><p>m2 m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PROMOTION_CARBONFLUX</p></td>
+<tr class="row-odd"><td><p>FATES_PROMOTION_CARBONFLUX</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>promotion-associated biomass carbon flux from understory to canopy in kg carbon per m2 per sec</p></td>
 <td><p>kg m-2 s-1</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_RAD_ERROR</p></td>
-<td><ul class="simple">
-<li></li>
-</ul>
-</td>
-<td><p>radiation error in FATES RTM</p></td>
-<td><p>W m-2</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-even"><td><p>FATES_REPROC</p></td>
@@ -1734,7 +1917,19 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_WOOD_PRODUCT</p></td>
+<tr class="row-odd"><td><p>FATES_VIS_RAD_ERROR</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>mean two-stream solver error for VIS</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>FATES_WOOD_PRODUCT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1743,13 +1938,40 @@ use_fates =  T</p>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FCEV</p></td>
+<tr class="row-odd"><td><p>FCEV</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>canopy evaporation</p></td>
 <td><p>W/m^2</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>FCH4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Gridcell surface CH4 flux to atmosphere (+ to atm)</p></td>
+<td><p>kgC/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FCH4TOCO2</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Gridcell oxidation of CH4 to CO2</p></td>
+<td><p>gC/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>FCH4_DFSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>CH4 additional flux due to changing fsat, natural vegetated and crop landunits only</p></td>
+<td><p>kgC/m2/s</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>FCO2</p></td>
@@ -1851,6 +2073,24 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
+<tr class="row-even"><td><p>FINUNDATED</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>fractional inundated area of vegetated columns</p></td>
+<td><p>unitless</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FINUNDATED_LAG</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>time-lagged inundated fraction of vegetated columns</p></td>
+<td><p>unitless</p></td>
+<td><p>F</p></td>
+</tr>
 <tr class="row-even"><td><p>FIRA</p></td>
 <td><ul class="simple">
 <li></li>
@@ -1928,7 +2168,7 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric longwave radiation (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric longwave radiation (downscaled for glacier and hillslope columns)</p></td>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
@@ -1937,11 +2177,20 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric longwave radiation (downscaled to columns in glacier regions) (ice landunits only)</p></td>
+<td><p>atmospheric longwave radiation (downscaled for glacier and hillslope columns) (ice landunits o</p></td>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FPG</p></td>
+<tr class="row-even"><td><p>FLDS_NOT_DOWNSCALED</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric longwave radiation (pre-downscaling)</p></td>
+<td><p>W/m^2</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>FPG</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1950,7 +2199,7 @@ use_fates =  T</p>
 <td><p>proportion</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FPI</p></td>
+<tr class="row-even"><td><p>FPI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1959,7 +2208,7 @@ use_fates =  T</p>
 <td><p>proportion</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FROST_TABLE</p></td>
+<tr class="row-odd"><td><p>FROST_TABLE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1968,7 +2217,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSA</p></td>
+<tr class="row-even"><td><p>FSA</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1977,7 +2226,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FSAT</p></td>
+<tr class="row-odd"><td><p>FSAT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1986,7 +2235,7 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSA_ICE</p></td>
+<tr class="row-even"><td><p>FSA_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -1995,7 +2244,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FSA_R</p></td>
+<tr class="row-odd"><td><p>FSA_R</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2004,7 +2253,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSA_U</p></td>
+<tr class="row-even"><td><p>FSA_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2013,7 +2262,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FSD24</p></td>
+<tr class="row-odd"><td><p>FSD24</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2022,7 +2271,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSD240</p></td>
+<tr class="row-even"><td><p>FSD240</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2031,16 +2280,16 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FSDS</p></td>
+<tr class="row-odd"><td><p>FSDS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric incident solar radiation</p></td>
+<td><p>atmospheric incident solar radiation (downscaled for glacier and hillslope columns)</p></td>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSDSND</p></td>
+<tr class="row-even"><td><p>FSDSND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2049,7 +2298,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FSDSNDLN</p></td>
+<tr class="row-odd"><td><p>FSDSNDLN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2058,7 +2307,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSDSNI</p></td>
+<tr class="row-even"><td><p>FSDSNI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2067,7 +2316,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FSDSVD</p></td>
+<tr class="row-odd"><td><p>FSDSVD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2076,7 +2325,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSDSVDLN</p></td>
+<tr class="row-even"><td><p>FSDSVDLN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2085,7 +2334,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FSDSVI</p></td>
+<tr class="row-odd"><td><p>FSDSVI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -2094,12 +2343,21 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FSDSVILN</p></td>
+<tr class="row-even"><td><p>FSDSVILN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>diffuse vis incident solar radiation at local noon</p></td>
+<td><p>W/m^2</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FSDS_from_atm</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric incident solar radiation received from atmosphere (pre-downscaling)</p></td>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
@@ -2990,7 +3248,7 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric longwave radiation (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric longwave radiation (downscaled for glacier and hillslope columns)</p></td>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
@@ -3138,7 +3396,16 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>NET_NMIN</p></td>
+<tr class="row-odd"><td><p>NEM</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>Gridcell net adjustment to net carbon exchange passed to atm. for methane production</p></td>
+<td><p>gC/m2/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>NET_NMIN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3147,7 +3414,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>NFIX_TO_SMINN</p></td>
+<tr class="row-odd"><td><p>NFIX_TO_SMINN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3156,7 +3423,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>NSUBSTEPS</p></td>
+<tr class="row-even"><td><p>NSUBSTEPS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3165,7 +3432,7 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>OBU</p></td>
+<tr class="row-odd"><td><p>OBU</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3174,7 +3441,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>OCDEP</p></td>
+<tr class="row-even"><td><p>OCDEP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3182,6 +3449,33 @@ use_fates =  T</p>
 <td><p>total OC deposition (dry+wet) from atmosphere</p></td>
 <td><p>kg/m^2/s</p></td>
 <td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>OCPHIDRY</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>organic carbon deposition (phidry) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>OCPHIWET</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>organic carbon deposition (phiwet) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>OCPHODRY</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>black carbon deposition (phodry) from atmosphere</p></td>
+<td><p>kg/m^2/s</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>PARVEGLN</p></td>
 <td><ul class="simple">
@@ -3197,7 +3491,25 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric pressure at surface (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric pressure at surface (downscaled for glacier and hillslope columns)</p></td>
+<td><p>Pa</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>PBOT_NOT_DOWNSCALED</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric pressure at surface (pre-downscaling)</p></td>
+<td><p>Pa</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>PCH4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric partial pressure of CH4</p></td>
 <td><p>Pa</p></td>
 <td><p>T</p></td>
 </tr>
@@ -3314,7 +3626,7 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric pressure at surface (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric pressure at surface (downscaled for glacier and hillslope columns)</p></td>
 <td><p>Pa</p></td>
 <td><p>F</p></td>
 </tr>
@@ -3345,7 +3657,16 @@ use_fates =  T</p>
 <td><p>kg/kg</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QDIRECT_THROUGHFALL</p></td>
+<tr class="row-even"><td><p>QBOT_NOT_DOWNSCALED</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric specific humidity (pre-downscaling)</p></td>
+<td><p>kg/kg</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>QDIRECT_THROUGHFALL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3354,7 +3675,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QDIRECT_THROUGHFALL_SNOW</p></td>
+<tr class="row-even"><td><p>QDIRECT_THROUGHFALL_SNOW</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3363,7 +3684,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>QDRAI</p></td>
+<tr class="row-odd"><td><p>QDRAI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3372,7 +3693,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QDRAI_PERCH</p></td>
+<tr class="row-even"><td><p>QDRAI_PERCH</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3381,7 +3702,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QDRAI_XS</p></td>
+<tr class="row-odd"><td><p>QDRAI_XS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3390,7 +3711,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QDRIP</p></td>
+<tr class="row-even"><td><p>QDRIP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3399,7 +3720,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>QDRIP_SNOW</p></td>
+<tr class="row-odd"><td><p>QDRIP_SNOW</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3408,7 +3729,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLOOD</p></td>
+<tr class="row-even"><td><p>QFLOOD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3417,7 +3738,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_EVAP_TOT</p></td>
+<tr class="row-odd"><td><p>QFLX_EVAP_TOT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3426,7 +3747,7 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_EVAP_VEG</p></td>
+<tr class="row-even"><td><p>QFLX_EVAP_VEG</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3435,7 +3756,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_ICE_DYNBAL</p></td>
+<tr class="row-odd"><td><p>QFLX_ICE_DYNBAL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3444,7 +3765,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_LIQDEW_TO_TOP_LAYER</p></td>
+<tr class="row-even"><td><p>QFLX_LIQDEW_TO_TOP_LAYER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3453,7 +3774,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_LIQEVAP_FROM_TOP_LAYER</p></td>
+<tr class="row-odd"><td><p>QFLX_LIQEVAP_FROM_TOP_LAYER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3462,7 +3783,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_LIQ_DYNBAL</p></td>
+<tr class="row-even"><td><p>QFLX_LIQ_DYNBAL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3471,7 +3792,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_LIQ_GRND</p></td>
+<tr class="row-odd"><td><p>QFLX_LIQ_GRND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3480,7 +3801,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_SNOW_DRAIN</p></td>
+<tr class="row-even"><td><p>QFLX_SNOW_DRAIN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3489,7 +3810,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_SNOW_DRAIN_ICE</p></td>
+<tr class="row-odd"><td><p>QFLX_SNOW_DRAIN_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3498,7 +3819,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_SNOW_GRND</p></td>
+<tr class="row-even"><td><p>QFLX_SNOW_GRND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3507,7 +3828,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_SOLIDDEW_TO_TOP_LAYER</p></td>
+<tr class="row-odd"><td><p>QFLX_SOLIDDEW_TO_TOP_LAYER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3516,7 +3837,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QFLX_SOLIDEVAP_FROM_TOP_LAYER</p></td>
+<tr class="row-even"><td><p>QFLX_SOLIDEVAP_FROM_TOP_LAYER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3525,7 +3846,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QFLX_SOLIDEVAP_FROM_TOP_LAYER_ICE</p></td>
+<tr class="row-odd"><td><p>QFLX_SOLIDEVAP_FROM_TOP_LAYER_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3534,7 +3855,7 @@ use_fates =  T</p>
 <td><p>mm H2O/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QH2OSFC</p></td>
+<tr class="row-even"><td><p>QH2OSFC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3543,7 +3864,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QH2OSFC_TO_ICE</p></td>
+<tr class="row-odd"><td><p>QH2OSFC_TO_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3552,7 +3873,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QHR</p></td>
+<tr class="row-even"><td><p>QHR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3561,7 +3882,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QICE</p></td>
+<tr class="row-odd"><td><p>QICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3570,7 +3891,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QICE_FRZ</p></td>
+<tr class="row-even"><td><p>QICE_FRZ</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3579,7 +3900,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QICE_MELT</p></td>
+<tr class="row-odd"><td><p>QICE_MELT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3588,7 +3909,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QINFL</p></td>
+<tr class="row-even"><td><p>QINFL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3597,7 +3918,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QINTR</p></td>
+<tr class="row-odd"><td><p>QINTR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3606,7 +3927,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QIRRIG_DEMAND</p></td>
+<tr class="row-even"><td><p>QIRRIG_DEMAND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3615,7 +3936,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>QIRRIG_DRIP</p></td>
+<tr class="row-odd"><td><p>QIRRIG_DRIP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3624,7 +3945,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QIRRIG_FROM_GW_CONFINED</p></td>
+<tr class="row-even"><td><p>QIRRIG_FROM_GW_CONFINED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3633,7 +3954,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QIRRIG_FROM_GW_UNCONFINED</p></td>
+<tr class="row-odd"><td><p>QIRRIG_FROM_GW_UNCONFINED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3642,7 +3963,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>QIRRIG_FROM_SURFACE</p></td>
+<tr class="row-even"><td><p>QIRRIG_FROM_SURFACE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3651,7 +3972,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>QIRRIG_SPRINKLER</p></td>
+<tr class="row-odd"><td><p>QIRRIG_SPRINKLER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3660,7 +3981,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QOVER</p></td>
+<tr class="row-even"><td><p>QOVER</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -3668,6 +3989,15 @@ use_fates =  T</p>
 <td><p>total surface runoff (includes QH2OSFC)</p></td>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>QOVER_LAG</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>time-lagged surface runoff for soil columns</p></td>
+<td><p>mm/s</p></td>
+<td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>QPHSNEG</p></td>
 <td><ul class="simple">
@@ -4034,7 +4364,7 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>Rural 2m specific humidity</p></td>
+<td><p>Rural 2m relative humidity</p></td>
 <td><p>%</p></td>
 <td><p>F</p></td>
 </tr>
@@ -4101,7 +4431,16 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>Rnet</p></td>
+<tr class="row-even"><td><p>Rho_from_atm</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric density (pre-downscaling)</p></td>
+<td><p>kg/m^3</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>Rnet</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4110,7 +4449,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SABG</p></td>
+<tr class="row-even"><td><p>SABG</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4119,7 +4458,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SABG_PEN</p></td>
+<tr class="row-odd"><td><p>SABG_PEN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4128,7 +4467,7 @@ use_fates =  T</p>
 <td><p>watt/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SABV</p></td>
+<tr class="row-even"><td><p>SABV</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4137,7 +4476,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN</p></td>
+<tr class="row-odd"><td><p>SMINN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4146,7 +4485,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_PLANT</p></td>
+<tr class="row-even"><td><p>SMINN_TO_PLANT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4155,7 +4494,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S1N_L1</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S1N_L1</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4164,7 +4503,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S1N_L2</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S1N_L2</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4173,7 +4512,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S1N_S2</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S1N_S2</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4182,7 +4521,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S1N_S3</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S1N_S3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4191,7 +4530,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S2N_L3</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S2N_L3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4200,7 +4539,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S2N_S1</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S2N_S1</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4209,7 +4548,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S3N_S1</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S3N_S1</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4218,7 +4557,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S3N_S2</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S3N_S2</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4227,7 +4566,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMIN_NH4</p></td>
+<tr class="row-odd"><td><p>SMIN_NH4</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4236,7 +4575,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMIN_NO3</p></td>
+<tr class="row-even"><td><p>SMIN_NO3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4245,7 +4584,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SMIN_NO3_LEACHED</p></td>
+<tr class="row-odd"><td><p>SMIN_NO3_LEACHED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4254,7 +4593,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMIN_NO3_RUNOFF</p></td>
+<tr class="row-even"><td><p>SMIN_NO3_RUNOFF</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4263,7 +4602,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOBCMCL</p></td>
+<tr class="row-odd"><td><p>SNOBCMCL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4272,7 +4611,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOBCMSL</p></td>
+<tr class="row-even"><td><p>SNOBCMSL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4281,7 +4620,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOCAN</p></td>
+<tr class="row-odd"><td><p>SNOCAN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4290,7 +4629,7 @@ use_fates =  T</p>
 <td><p>mm</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNODSTMCL</p></td>
+<tr class="row-even"><td><p>SNODSTMCL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4299,7 +4638,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNODSTMSL</p></td>
+<tr class="row-odd"><td><p>SNODSTMSL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4308,7 +4647,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOFSDSND</p></td>
+<tr class="row-even"><td><p>SNOFSDSND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4317,7 +4656,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOFSDSNI</p></td>
+<tr class="row-odd"><td><p>SNOFSDSNI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4326,7 +4665,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOFSDSVD</p></td>
+<tr class="row-even"><td><p>SNOFSDSVD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4335,7 +4674,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOFSDSVI</p></td>
+<tr class="row-odd"><td><p>SNOFSDSVI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4344,7 +4683,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOFSRND</p></td>
+<tr class="row-even"><td><p>SNOFSRND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4353,7 +4692,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOFSRNI</p></td>
+<tr class="row-odd"><td><p>SNOFSRNI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4362,7 +4701,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOFSRVD</p></td>
+<tr class="row-even"><td><p>SNOFSRVD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4371,7 +4710,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOFSRVI</p></td>
+<tr class="row-odd"><td><p>SNOFSRVI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4380,7 +4719,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOINTABS</p></td>
+<tr class="row-even"><td><p>SNOINTABS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4392,7 +4731,7 @@ use_fates =  T</p>
 </td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOLIQFL</p></td>
+<tr class="row-odd"><td><p>SNOLIQFL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4401,7 +4740,7 @@ use_fates =  T</p>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOMELT_ACCUM</p></td>
+<tr class="row-even"><td><p>SNOMELT_ACCUM</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4410,7 +4749,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOOCMCL</p></td>
+<tr class="row-odd"><td><p>SNOOCMCL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4419,7 +4758,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOOCMSL</p></td>
+<tr class="row-even"><td><p>SNOOCMSL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4428,7 +4767,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNORDSL</p></td>
+<tr class="row-odd"><td><p>SNORDSL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4437,7 +4776,7 @@ use_fates =  T</p>
 <td><p>m^-6</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOTTOPL</p></td>
+<tr class="row-even"><td><p>SNOTTOPL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4446,7 +4785,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOTTOPL_ICE</p></td>
+<tr class="row-odd"><td><p>SNOTTOPL_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4455,7 +4794,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOTXMASS</p></td>
+<tr class="row-even"><td><p>SNOTXMASS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4464,7 +4803,7 @@ use_fates =  T</p>
 <td><p>K kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOTXMASS_ICE</p></td>
+<tr class="row-odd"><td><p>SNOTXMASS_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4473,7 +4812,7 @@ use_fates =  T</p>
 <td><p>K kg/m2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOW</p></td>
+<tr class="row-even"><td><p>SNOW</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4482,7 +4821,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOWDP</p></td>
+<tr class="row-odd"><td><p>SNOWDP</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4491,7 +4830,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOWICE</p></td>
+<tr class="row-even"><td><p>SNOWICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4500,7 +4839,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOWICE_ICE</p></td>
+<tr class="row-odd"><td><p>SNOWICE_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4509,7 +4848,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOWLIQ</p></td>
+<tr class="row-even"><td><p>SNOWLIQ</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4518,7 +4857,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOWLIQ_ICE</p></td>
+<tr class="row-odd"><td><p>SNOWLIQ_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4527,7 +4866,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOW_5D</p></td>
+<tr class="row-even"><td><p>SNOW_5D</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4536,7 +4875,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOW_DEPTH</p></td>
+<tr class="row-odd"><td><p>SNOW_DEPTH</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4545,7 +4884,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOW_DEPTH_ICE</p></td>
+<tr class="row-even"><td><p>SNOW_DEPTH_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4554,7 +4893,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOW_FROM_ATM</p></td>
+<tr class="row-odd"><td><p>SNOW_FROM_ATM</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4563,7 +4902,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOW_ICE</p></td>
+<tr class="row-even"><td><p>SNOW_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4572,7 +4911,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOW_PERSISTENCE</p></td>
+<tr class="row-odd"><td><p>SNOW_PERSISTENCE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4581,7 +4920,7 @@ use_fates =  T</p>
 <td><p>seconds</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOW_SINKS</p></td>
+<tr class="row-even"><td><p>SNOW_SINKS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4590,7 +4929,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SNOW_SOURCES</p></td>
+<tr class="row-odd"><td><p>SNOW_SOURCES</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4599,7 +4938,7 @@ use_fates =  T</p>
 <td><p>mm/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SNOdTdzL</p></td>
+<tr class="row-even"><td><p>SNOdTdzL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4608,7 +4947,7 @@ use_fates =  T</p>
 <td><p>K/m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOIL10</p></td>
+<tr class="row-odd"><td><p>SOIL10</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4617,7 +4956,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOILC_HR</p></td>
+<tr class="row-even"><td><p>SOILC_HR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4626,7 +4965,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOILRESIS</p></td>
+<tr class="row-odd"><td><p>SOILRESIS</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4635,7 +4974,7 @@ use_fates =  T</p>
 <td><p>s/m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOILWATER_10CM</p></td>
+<tr class="row-even"><td><p>SOILWATER_10CM</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4644,7 +4983,7 @@ use_fates =  T</p>
 <td><p>kg/m2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOMC_FIRE</p></td>
+<tr class="row-odd"><td><p>SOMC_FIRE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4653,7 +4992,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_C</p></td>
+<tr class="row-even"><td><p>SOM_ACT_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4662,7 +5001,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_C_1m</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_C_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4671,7 +5010,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_C_TO_SOM_PAS_C</p></td>
+<tr class="row-even"><td><p>SOM_ACT_C_TO_SOM_PAS_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4680,7 +5019,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_C_TO_SOM_SLO_C</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_C_TO_SOM_SLO_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4689,7 +5028,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_HR_S2</p></td>
+<tr class="row-even"><td><p>SOM_ACT_HR_S2</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4698,7 +5037,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_HR_S3</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_HR_S3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4707,7 +5046,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_N</p></td>
+<tr class="row-even"><td><p>SOM_ACT_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4716,7 +5055,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_N_1m</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_N_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4725,7 +5064,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_N_TO_SOM_PAS_N</p></td>
+<tr class="row-even"><td><p>SOM_ACT_N_TO_SOM_PAS_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4734,7 +5073,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_N_TO_SOM_SLO_N</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_N_TO_SOM_SLO_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4743,7 +5082,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_C_LEACHED</p></td>
+<tr class="row-even"><td><p>SOM_C_LEACHED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4752,7 +5091,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_N_LEACHED</p></td>
+<tr class="row-odd"><td><p>SOM_N_LEACHED</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4761,7 +5100,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_C</p></td>
+<tr class="row-even"><td><p>SOM_PAS_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4770,7 +5109,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_C_1m</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_C_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4779,7 +5118,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_C_TO_SOM_ACT_C</p></td>
+<tr class="row-even"><td><p>SOM_PAS_C_TO_SOM_ACT_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4788,7 +5127,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_HR</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_HR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4797,7 +5136,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_N</p></td>
+<tr class="row-even"><td><p>SOM_PAS_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4806,7 +5145,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_N_1m</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_N_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4815,7 +5154,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_N_TO_SOM_ACT_N</p></td>
+<tr class="row-even"><td><p>SOM_PAS_N_TO_SOM_ACT_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4824,7 +5163,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_C</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4833,7 +5172,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_C_1m</p></td>
+<tr class="row-even"><td><p>SOM_SLO_C_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4842,7 +5181,7 @@ use_fates =  T</p>
 <td><p>gC/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_C_TO_SOM_ACT_C</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_C_TO_SOM_ACT_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4851,7 +5190,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_C_TO_SOM_PAS_C</p></td>
+<tr class="row-even"><td><p>SOM_SLO_C_TO_SOM_PAS_C</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4860,7 +5199,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_HR_S1</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_HR_S1</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4869,7 +5208,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_HR_S3</p></td>
+<tr class="row-even"><td><p>SOM_SLO_HR_S3</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4878,7 +5217,7 @@ use_fates =  T</p>
 <td><p>gC/m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_N</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4887,7 +5226,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_N_1m</p></td>
+<tr class="row-even"><td><p>SOM_SLO_N_1m</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4896,7 +5235,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_N_TO_SOM_ACT_N</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_N_TO_SOM_ACT_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4905,7 +5244,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_N_TO_SOM_PAS_N</p></td>
+<tr class="row-even"><td><p>SOM_SLO_N_TO_SOM_PAS_N</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4914,7 +5253,7 @@ use_fates =  T</p>
 <td><p>gN/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SUPPLEMENT_TO_SMINN</p></td>
+<tr class="row-odd"><td><p>SUPPLEMENT_TO_SMINN</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4923,7 +5262,7 @@ use_fates =  T</p>
 <td><p>gN/m^2/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SWBGT</p></td>
+<tr class="row-even"><td><p>SWBGT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4932,7 +5271,7 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SWBGT_R</p></td>
+<tr class="row-odd"><td><p>SWBGT_R</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4941,7 +5280,7 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SWBGT_U</p></td>
+<tr class="row-even"><td><p>SWBGT_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4950,7 +5289,7 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SWdown</p></td>
+<tr class="row-odd"><td><p>SWdown</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4959,7 +5298,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SWup</p></td>
+<tr class="row-even"><td><p>SWup</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4968,7 +5307,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SoilAlpha</p></td>
+<tr class="row-odd"><td><p>SoilAlpha</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4977,7 +5316,7 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SoilAlpha_U</p></td>
+<tr class="row-even"><td><p>SoilAlpha_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4986,7 +5325,7 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>T10</p></td>
+<tr class="row-odd"><td><p>T10</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -4995,7 +5334,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>TAF</p></td>
+<tr class="row-even"><td><p>TAF</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5004,7 +5343,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TAUX</p></td>
+<tr class="row-odd"><td><p>TAUX</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5013,7 +5352,7 @@ use_fates =  T</p>
 <td><p>kg/m/s^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>TAUY</p></td>
+<tr class="row-even"><td><p>TAUY</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5022,16 +5361,16 @@ use_fates =  T</p>
 <td><p>kg/m/s^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>TBOT</p></td>
+<tr class="row-odd"><td><p>TBOT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric air temperature (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric air temperature (downscaled for glacier and hillslope columns)</p></td>
 <td><p>K</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>TBUILD</p></td>
+<tr class="row-even"><td><p>TBUILD</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5040,7 +5379,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>TBUILD_MAX</p></td>
+<tr class="row-odd"><td><p>TBUILD_MAX</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5049,7 +5388,25 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>TFLOOR</p></td>
+<tr class="row-even"><td><p>TDEPTH</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>tributary water depth</p></td>
+<td><p>m</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>TDEPTHMAX</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>tributary bankfull water depth</p></td>
+<td><p>m</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>TFLOOR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5058,7 +5415,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TG</p></td>
+<tr class="row-odd"><td><p>TG</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5067,7 +5424,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>TG_ICE</p></td>
+<tr class="row-even"><td><p>TG_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5076,7 +5433,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TG_R</p></td>
+<tr class="row-odd"><td><p>TG_R</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5085,7 +5442,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>TG_U</p></td>
+<tr class="row-even"><td><p>TG_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5094,7 +5451,7 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TH2OSFC</p></td>
+<tr class="row-odd"><td><p>TH2OSFC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5103,16 +5460,16 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>THBOT</p></td>
+<tr class="row-even"><td><p>THBOT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric air potential temperature (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric air potential temperature (downscaled for glacier and hillslope columns)</p></td>
 <td><p>K</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>TKE1</p></td>
+<tr class="row-odd"><td><p>TKE1</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5121,7 +5478,7 @@ use_fates =  T</p>
 <td><p>W/(mK)</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>TLAI</p></td>
+<tr class="row-even"><td><p>TLAI</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5130,7 +5487,7 @@ use_fates =  T</p>
 <td><p>m^2/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPO_COL</p></td>
+<tr class="row-odd"><td><p>TOPO_COL</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5139,7 +5496,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>TOPO_COL_ICE</p></td>
+<tr class="row-even"><td><p>TOPO_COL_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5148,13 +5505,22 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TOTCOLC</p></td>
+<tr class="row-odd"><td><p>TOTCOLC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>total column carbon, incl veg and cpool but excl product pools</p></td>
 <td><p>gC/m^2</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>TOTCOLCH4</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>total belowground CH4 (0 for non-lake special landunits in the absence of dynamic landunits)</p></td>
+<td><p>gC/m2</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>TOTCOLN</p></td>
@@ -5513,7 +5879,7 @@ use_fates =  T</p>
 <li></li>
 </ul>
 </td>
-<td><p>atmospheric air temperature (downscaled to columns in glacier regions)</p></td>
+<td><p>atmospheric air temperature (downscaled for glacier and hillslope columns)</p></td>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
@@ -5526,7 +5892,16 @@ use_fates =  T</p>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>U10</p></td>
+<tr class="row-even"><td><p>Thair_from_atm</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric air potential temperature (pre-downscaling)</p></td>
+<td><p>K</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>U10</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5535,7 +5910,7 @@ use_fates =  T</p>
 <td><p>m/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>U10_DUST</p></td>
+<tr class="row-even"><td><p>U10_DUST</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5544,7 +5919,7 @@ use_fates =  T</p>
 <td><p>m/s</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>U10_ICE</p></td>
+<tr class="row-odd"><td><p>U10_ICE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5553,7 +5928,7 @@ use_fates =  T</p>
 <td><p>m/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>UAF</p></td>
+<tr class="row-even"><td><p>UAF</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5562,7 +5937,7 @@ use_fates =  T</p>
 <td><p>m/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>UM</p></td>
+<tr class="row-odd"><td><p>UM</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5571,7 +5946,7 @@ use_fates =  T</p>
 <td><p>m/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>URBAN_AC</p></td>
+<tr class="row-even"><td><p>URBAN_AC</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5580,7 +5955,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>URBAN_HEAT</p></td>
+<tr class="row-odd"><td><p>URBAN_HEAT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5589,7 +5964,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>USTAR</p></td>
+<tr class="row-even"><td><p>USTAR</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5598,12 +5973,21 @@ use_fates =  T</p>
 <td><p>s/m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>UST_LAKE</p></td>
+<tr class="row-odd"><td><p>UST_LAKE</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>friction velocity (lakes only)</p></td>
+<td><p>m/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>UWIND</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric U wind velocity magnitude</p></td>
 <td><p>m/s</p></td>
 <td><p>F</p></td>
 </tr>
@@ -5670,7 +6054,16 @@ use_fates =  T</p>
 <td><p>kPa</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>WASTEHEAT</p></td>
+<tr class="row-even"><td><p>VWIND</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>atmospheric V wind velocity magnitude</p></td>
+<td><p>m/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>WASTEHEAT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5679,7 +6072,7 @@ use_fates =  T</p>
 <td><p>W/m^2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>WBT</p></td>
+<tr class="row-even"><td><p>WBT</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5688,7 +6081,7 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>WBT_R</p></td>
+<tr class="row-odd"><td><p>WBT_R</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5697,7 +6090,7 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>WBT_U</p></td>
+<tr class="row-even"><td><p>WBT_U</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5706,12 +6099,21 @@ use_fates =  T</p>
 <td><p>C</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>WIND</p></td>
+<tr class="row-odd"><td><p>WIND</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
 </td>
 <td><p>atmospheric wind velocity magnitude</p></td>
+<td><p>m/s</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>WTGQ</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>surface tracer conductance</p></td>
 <td><p>m/s</p></td>
 <td><p>T</p></td>
 </tr>
@@ -5805,7 +6207,16 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>ZWT_PERCH</p></td>
+<tr class="row-odd"><td><p>ZWT_CH4_UNSAT</p></td>
+<td><ul class="simple">
+<li></li>
+</ul>
+</td>
+<td><p>depth of water table for methane production used in non-inundated area</p></td>
+<td><p>m</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>ZWT_PERCH</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5814,7 +6225,7 @@ use_fates =  T</p>
 <td><p>m</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>num_iter</p></td>
+<tr class="row-odd"><td><p>num_iter</p></td>
 <td><ul class="simple">
 <li></li>
 </ul>
@@ -5823,327 +6234,261 @@ use_fates =  T</p>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>QICE_FORC</p></td>
+<tr class="row-even"><td><p>QICE_FORC</p></td>
 <td><p>elevclas</p></td>
 <td><p>qice forcing sent to GLC</p></td>
 <td><p>mm/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>TOPO_FORC</p></td>
+<tr class="row-odd"><td><p>TOPO_FORC</p></td>
 <td><p>elevclas</p></td>
 <td><p>topograephic height sent to GLC</p></td>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>TSRF_FORC</p></td>
+<tr class="row-even"><td><p>TSRF_FORC</p></td>
 <td><p>elevclas</p></td>
 <td><p>surface temperature sent to GLC</p></td>
 <td><p>K</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_BURNFRAC_AP</p></td>
+<tr class="row-odd"><td><p>FATES_BURNFRAC_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>spitfire fraction area burnt (per second) by patch age</p></td>
 <td><p>s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CANOPYAREA_AP</p></td>
+<tr class="row-even"><td><p>FATES_CANOPYAREA_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>canopy area by age bin per m2 land area</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FIRE_INTENSITY_BURNFRAC_AP</p></td>
+<tr class="row-odd"><td><p>FATES_FIRE_INTENSITY_BURNFRAC_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>product of fire intensity and burned fraction, resolved by patch age (so divide by FATES_BURNF</p></td>
 <td><p>J m-1 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FUEL_AMOUNT_AP</p></td>
+<tr class="row-even"><td><p>FATES_FUEL_AMOUNT_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>spitfire ground fuel (kg carbon per m2) related to FATES_ROS (omits 1000hr fuels) within each</p></td>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GPP_AP</p></td>
+<tr class="row-odd"><td><p>FATES_GPP_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>gross primary productivity by age bin in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LAI_AP</p></td>
+<tr class="row-even"><td><p>FATES_LAI_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>leaf area index by age bin per m2 land area</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LBLAYER_COND_AP</p></td>
+<tr class="row-odd"><td><p>FATES_LBLAYER_COND_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>mean leaf boundary layer conductance - by patch age</p></td>
 <td><p>mol m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NCL_AP</p></td>
+<tr class="row-even"><td><p>FATES_NCL_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>number of canopy levels by age bin</p></td>
 <td></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPATCH_AP</p></td>
+<tr class="row-odd"><td><p>FATES_NPATCH_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>number of patches by age bin</p></td>
 <td></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP_AP</p></td>
+<tr class="row-even"><td><p>FATES_NPP_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>net primary productivity by age bin in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PATCHAREA_AP</p></td>
+<tr class="row-odd"><td><p>FATES_PATCHAREA_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>patch area by age bin per m2 land area</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SECONDAREA_ANTHRODIST_AP</p></td>
+<tr class="row-even"><td><p>FATES_SECONDAREA_ANTHRODIST_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>secondary forest patch area age distribution since anthropgenic disturbance</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SECONDAREA_DIST_AP</p></td>
+<tr class="row-odd"><td><p>FATES_SECONDAREA_DIST_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>secondary forest patch area age distribution since any kind of disturbance</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STOMATAL_COND_AP</p></td>
+<tr class="row-even"><td><p>FATES_STOMATAL_COND_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>mean stomatal conductance - by patch age</p></td>
 <td><p>mol m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_VEGC_AP</p></td>
+<tr class="row-odd"><td><p>FATES_VEGC_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>total biomass within a given patch age bin in kg carbon per m2 land area</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_ZSTAR_AP</p></td>
+<tr class="row-even"><td><p>FATES_ZSTAR_AP</p></td>
 <td><p>fates_levage</p></td>
 <td><p>product of zstar and patch area by age bin (divide by FATES_PATCHAREA_AP to get mean zstar)</p></td>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FUEL_AMOUNT_APFC</p></td>
+<tr class="row-odd"><td><p>FATES_FUEL_AMOUNT_APFC</p></td>
 <td><p>fates_levagefuel</p></td>
 <td><p>spitfire fuel quantity in each age x fuel class in kg carbon per m2 land area</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP_APPF</p></td>
+<tr class="row-even"><td><p>FATES_NPP_APPF</p></td>
 <td><p>fates_levagepft</p></td>
 <td><p>NPP per PFT in each age bin in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SCORCH_HEIGHT_APPF</p></td>
+<tr class="row-odd"><td><p>FATES_SCORCH_HEIGHT_APPF</p></td>
 <td><p>fates_levagepft</p></td>
 <td><p>SPITFIRE flame Scorch Height (calculated per PFT in each patch age bin)</p></td>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_VEGC_APPF</p></td>
+<tr class="row-even"><td><p>FATES_VEGC_APPF</p></td>
 <td><p>fates_levagepft</p></td>
 <td><p>biomass per PFT in each age bin in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_AGESCEN_AC</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_AGESCEN_AC</p></td>
 <td><p>fates_levcacls</p></td>
 <td><p>age senescence mortality by cohort age in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_AC</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_AC</p></td>
 <td><p>fates_levcacls</p></td>
 <td><p>number of plants per m2 by cohort age class</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CROWNAREA_CL</p></td>
+<tr class="row-odd"><td><p>FATES_CROWNAREA_CL</p></td>
 <td><p>fates_levcan</p></td>
-<td><p>total crown area in each canopy layer</p></td>
+<td><p>area fraction of the canopy footprint occupied by each canopy-leaf layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FABD_SHA_TOPLF_CL</p></td>
+<tr class="row-even"><td><p>FATES_LAISHA_CL</p></td>
 <td><p>fates_levcan</p></td>
-<td><p>shade fraction of direct light absorbed by the top leaf layer of each canopy layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_FABD_SUN_TOPLF_CL</p></td>
-<td><p>fates_levcan</p></td>
-<td><p>sun fraction of direct light absorbed by the top leaf layer of each canopy layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_FABI_SHA_TOPLF_CL</p></td>
-<td><p>fates_levcan</p></td>
-<td><p>shade fraction of indirect light absorbed by the top leaf layer of each canopy layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_FABI_SUN_TOPLF_CL</p></td>
-<td><p>fates_levcan</p></td>
-<td><p>sun fraction of indirect light absorbed by the top leaf layer of each canopy layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_LAISHA_TOP_CL</p></td>
-<td><p>fates_levcan</p></td>
-<td><p>LAI in the shade by the top leaf layer of each canopy layer</p></td>
+<td><p>LAI of shaded leaves by canopy layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LAISUN_TOP_CL</p></td>
+<tr class="row-odd"><td><p>FATES_LAISUN_CL</p></td>
 <td><p>fates_levcan</p></td>
-<td><p>LAI in the sun by the top leaf layer of each canopy layer</p></td>
+<td><p>LAI of sunlit leaves by canopy layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PARSHA_Z_CL</p></td>
+<tr class="row-even"><td><p>FATES_PARSHA_CL</p></td>
 <td><p>fates_levcan</p></td>
-<td><p>PAR absorbed in the shade by top leaf layer in each canopy layer</p></td>
+<td><p>PAR absorbed by shaded leaves in each canopy layer</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PARSUN_Z_CL</p></td>
+<tr class="row-odd"><td><p>FATES_PARSUN_CL</p></td>
 <td><p>fates_levcan</p></td>
-<td><p>PAR absorbed in the sun by top leaf layer in each canopy layer</p></td>
+<td><p>PAR absorbed by sunlit leaves in each canopy layer</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_AGESCEN_ACPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_AGESCEN_ACPF</p></td>
 <td><p>fates_levcapf</p></td>
 <td><p>age senescence mortality by pft/cohort age in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_ACPF</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_ACPF</p></td>
 <td><p>fates_levcapf</p></td>
 <td><p>stem number density by pft and age class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CROWNAREA_CLLL</p></td>
+<tr class="row-even"><td><p>FATES_CROWNAREA_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
-<td><p>total crown area that is occupied by leaves in each canopy and leaf layer</p></td>
+<td><p>area fraction of the total ground occupied by each canopy-leaf layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FABD_SHA_CLLL</p></td>
-<td><p>fates_levcnlf</p></td>
-<td><p>shade fraction of direct light absorbed by each canopy and leaf layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_FABD_SUN_CLLL</p></td>
-<td><p>fates_levcnlf</p></td>
-<td><p>sun fraction of direct light absorbed by each canopy and leaf layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_FABI_SHA_CLLL</p></td>
-<td><p>fates_levcnlf</p></td>
-<td><p>shade fraction of indirect light absorbed by each canopy and leaf layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_FABI_SUN_CLLL</p></td>
-<td><p>fates_levcnlf</p></td>
-<td><p>sun fraction of indirect light absorbed by each canopy and leaf layer</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_LAISHA_Z_CLLL</p></td>
+<tr class="row-odd"><td><p>FATES_LAISHA_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>LAI in the shade by each canopy and leaf layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LAISUN_Z_CLLL</p></td>
+<tr class="row-even"><td><p>FATES_LAISUN_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>LAI in the sun by each canopy and leaf layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NET_C_UPTAKE_CLLL</p></td>
+<tr class="row-odd"><td><p>FATES_NET_C_UPTAKE_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>net carbon uptake in kg carbon per m2 per second by each canopy and leaf layer per unit ground</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PARPROF_DIF_CLLL</p></td>
+<tr class="row-even"><td><p>FATES_PARPROF_DIF_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>radiative profile of diffuse PAR through each canopy and leaf layer (averaged across PFTs)</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PARPROF_DIR_CLLL</p></td>
+<tr class="row-odd"><td><p>FATES_PARPROF_DIR_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>radiative profile of direct PAR through each canopy and leaf layer (averaged across PFTs)</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PARSHA_Z_CLLL</p></td>
+<tr class="row-even"><td><p>FATES_PARSHA_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>PAR absorbed in the shade by each canopy and leaf layer</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PARSUN_Z_CLLL</p></td>
+<tr class="row-odd"><td><p>FATES_PARSUN_CLLL</p></td>
 <td><p>fates_levcnlf</p></td>
 <td><p>PAR absorbed in the sun by each canopy and leaf layer</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FABD_SHA_CLLLPF</p></td>
+<tr class="row-even"><td><p>FATES_CROWNFRAC_CLLLPF</p></td>
 <td><p>fates_levcnlfpf</p></td>
-<td><p>shade fraction of direct light absorbed by each canopy, leaf, and PFT</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_FABD_SUN_CLLLPF</p></td>
-<td><p>fates_levcnlfpf</p></td>
-<td><p>sun fraction of direct light absorbed by each canopy, leaf, and PFT</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_FABI_SHA_CLLLPF</p></td>
-<td><p>fates_levcnlfpf</p></td>
-<td><p>shade fraction of indirect light absorbed by each canopy, leaf, and PFT</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>FATES_FABI_SUN_CLLLPF</p></td>
-<td><p>fates_levcnlfpf</p></td>
-<td><p>sun fraction of indirect light absorbed by each canopy, leaf, and PFT</p></td>
-<td><p>1</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>FATES_LAISHA_Z_CLLLPF</p></td>
-<td><p>fates_levcnlfpf</p></td>
-<td><p>LAI in the shade by each canopy, leaf, and PFT</p></td>
+<td><p>area fraction of the canopy footprint occupied by each canopy-leaf-pft layer</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LAISUN_Z_CLLLPF</p></td>
+<tr class="row-odd"><td><p>FATES_LAISHA_CLLLPF</p></td>
 <td><p>fates_levcnlfpf</p></td>
-<td><p>LAI in the sun by each canopy, leaf, and PFT</p></td>
+<td><p>Shaded leaf area by each canopy, leaf, and PFT</p></td>
+<td><p>m2 m-2</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>FATES_LAISUN_CLLLPF</p></td>
+<td><p>fates_levcnlfpf</p></td>
+<td><p>Sunlit leaf area by each canopy, leaf, and PFT</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
@@ -6159,13 +6504,13 @@ use_fates =  T</p>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PARSHA_Z_CLLLPF</p></td>
+<tr class="row-odd"><td><p>FATES_PARSHA_CLLLPF</p></td>
 <td><p>fates_levcnlfpf</p></td>
 <td><p>PAR absorbed in the shade by each canopy, leaf, and PFT</p></td>
 <td><p>W m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_PARSUN_Z_CLLLPF</p></td>
+<tr class="row-even"><td><p>FATES_PARSUN_CLLLPF</p></td>
 <td><p>fates_levcnlfpf</p></td>
 <td><p>PAR absorbed in the sun by each canopy, leaf, and PFT</p></td>
 <td><p>W m-2</p></td>
@@ -6321,6 +6666,18 @@ use_fates =  T</p>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
+<tr class="row-even"><td><p>FATES_PATCHAREA_LU</p></td>
+<td><p>fates_levlanduse</p></td>
+<td><p>patch area by land use type</p></td>
+<td><p>m2 m-2</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_DISTURBANCE_RATE_MATRIX_LULU</p></td>
+<td><p>fates_levlulu</p></td>
+<td><p>disturbance rates by land use type x land use type matrix</p></td>
+<td><p>m2 m-2 yr-1</p></td>
+<td><p>T</p></td>
+</tr>
 <tr class="row-even"><td><p>FATES_CANOPYCROWNAREA_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level canopy-layer crown area per m2 land area</p></td>
@@ -6369,6 +6726,18 @@ use_fates =  T</p>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
+<tr class="row-even"><td><p>FATES_L2FR_CANOPY_REC_PF</p></td>
+<td><p>fates_levpft</p></td>
+<td><p>The leaf to fineroot biomass multiplier for recruits (canopy)</p></td>
+<td><p>kg kg-1</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_L2FR_USTORY_REC_PF</p></td>
+<td><p>fates_levpft</p></td>
+<td><p>The leaf to fineroot biomass multiplier for recruits (understory)</p></td>
+<td><p>kg kg-1</p></td>
+<td><p>T</p></td>
+</tr>
 <tr class="row-even"><td><p>FATES_LEAFC_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level leaf biomass in kg carbon per m2 land area</p></td>
@@ -6395,7 +6764,7 @@ use_fates =  T</p>
 </tr>
 <tr class="row-even"><td><p>FATES_MORTALITY_CSTARV_CFLUX_PF</p></td>
 <td><p>fates_levpft</p></td>
-<td><p>PFT-level flux of biomass carbon from live to dead pool from carbon starvation mortality</p></td>
+<td><p>PFT-level flux of biomass carbon from live to dead pool from carbon starvation mortality (both</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
@@ -6417,1660 +6786,1696 @@ use_fates =  T</p>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_PF</p></td>
+<tr class="row-even"><td><p>FATES_MORT_CSTARV_CONT_CFLUX_PF</p></td>
+<td><p>fates_levpft</p></td>
+<td><p>PFT-level flux of biomass carbon from live to dead pool from carbon starvation mortality (Cont</p></td>
+<td><p>kg m-2 s-1</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_NPLANT_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level number of individuals per m2 land area</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_SEC_PF</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_SEC_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level number of individuals per m2 land area, secondary patches</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPP_PF</p></td>
+<tr class="row-odd"><td><p>FATES_NPP_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level NPP in kg carbon per m2 land area per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP_SE_PF</p></td>
+<tr class="row-even"><td><p>FATES_NPP_SE_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level NPP in kg carbon per m2 land area per second, secondary patches</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_RECRUITMENT_PF</p></td>
+<tr class="row-odd"><td><p>FATES_RECRUITMENT_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>PFT-level recruitment rate in number of individuals per m2 land area per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SEEDS_IN_GRIDCELL_PF</p></td>
+<tr class="row-even"><td><p>FATES_SEEDS_IN_GRIDCELL_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>Site-level seed mass input from neighboring gridcells per pft</p></td>
 <td><p>kg</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SEEDS_OUT_GRIDCELL_PF</p></td>
+<tr class="row-odd"><td><p>FATES_SEEDS_OUT_GRIDCELL_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>Site-level seed mass output to neighboring gridcells per pft</p></td>
 <td><p>kg</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STOREC_PF</p></td>
+<tr class="row-even"><td><p>FATES_STOREC_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level stored biomass in kg carbon per m2 land area</p></td>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_VEGC_PF</p></td>
+<tr class="row-odd"><td><p>FATES_VEGC_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level biomass in kg of carbon per land area</p></td>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_VEGC_SE_PF</p></td>
+<tr class="row-even"><td><p>FATES_VEGC_SE_PF</p></td>
 <td><p>fates_levpft</p></td>
 <td><p>total PFT-level biomass in kg of carbon per land area, secondary patches</p></td>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DDBH_CANOPY_SZAP</p></td>
+<tr class="row-odd"><td><p>FATES_DDBH_CANOPY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>growth rate of canopy plants in meters DBH per m2 per year in canopy in each size x age class</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DDBH_USTORY_SZAP</p></td>
+<tr class="row-even"><td><p>FATES_DDBH_USTORY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>growth rate of understory plants in meters DBH per m2 per year in each size x age class</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_CANOPY_SZAP</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_CANOPY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>mortality rate of canopy plants in number of plants per m2 per year in each size x age class</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_USTORY_SZAP</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_USTORY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>mortality rate of understory plants in number of plants per m2 per year in each size x age cla</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_CANOPY_SZAP</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_CANOPY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>number of plants per m2 in canopy in each size x age class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_SZAP</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>number of plants per m2 in each size x age class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_USTORY_SZAP</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_USTORY_SZAP</p></td>
 <td><p>fates_levscag</p></td>
 <td><p>number of plants per m2 in understory in each size x age class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_SZAPPF</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_SZAPPF</p></td>
 <td><p>fates_levscagpf</p></td>
 <td><p>number of plants per m2 in each size x age x pft class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_BASALAREA_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_BASALAREA_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>basal area by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CROOTMAINTAR_CANOPY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_CROOTMAINTAR_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>live coarse root maintenance autotrophic respiration for canopy plants in kg carbon per m2 per</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CROOTMAINTAR_USTORY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_CROOTMAINTAR_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>live coarse root maintenance autotrophic respiration for understory plants in kg carbon per m2</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_CROWNAREA_CANOPY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_CROWNAREA_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total crown area of canopy plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_CROWNAREA_USTORY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_CROWNAREA_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total crown area of understory plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DDBH_CANOPY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_DDBH_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>diameter growth increment by size of canopy plants</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DDBH_USTORY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_DDBH_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>diameter growth increment by size of understory plants</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DEMOTION_RATE_SZ</p></td>
+<tr class="row-even"><td><p>FATES_DEMOTION_RATE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>demotion rate from canopy to understory by size class in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOTCTURN_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_FROOTCTURN_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>fine root turnover (non-mortal) for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOTCTURN_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_FROOTCTURN_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>fine root turnover (non-mortal) for understory plants by size class in kg carbon per m2 per se</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOTMAINTAR_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_FROOTMAINTAR_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>live coarse root maintenance autotrophic respiration for canopy plants in kg carbon per m2 per</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOTMAINTAR_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_FROOTMAINTAR_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>fine root maintenance autotrophic respiration for understory plants in kg carbon per m2 per se</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOT_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_FROOT_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to fine root C for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOT_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_FROOT_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to fine roots for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GROWAR_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_GROWAR_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>growth autotrophic respiration of canopy plants in kg carbon per m2 per second by size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GROWAR_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_GROWAR_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>growth autotrophic respiration of understory plants in kg carbon per m2 per second by size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LAI_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_LAI_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>leaf area index (LAI) of canopy plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LAI_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_LAI_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>leaf area index (LAI) of understory plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LEAFCTURN_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_LEAFCTURN_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>leaf turnover (non-mortal) for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LEAFCTURN_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_LEAFCTURN_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>leaf turnover (non-mortal) for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LEAF_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_LEAF_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to leaves for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LEAF_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_LEAF_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to leaves for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LSTEMMAINTAR_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_LSTEMMAINTAR_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>live stem maintenance autotrophic respiration for canopy plants in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LSTEMMAINTAR_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_LSTEMMAINTAR_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>live stem maintenance autotrophic respiration for understory plants in kg carbon per m2 per se</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_M3_MORTALITY_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_M3_MORTALITY_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>C starvation mortality of canopy plants by size</p></td>
-<td><p>N/ha/yr</p></td>
+<td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_M3_MORTALITY_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_M3_MORTALITY_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>C starvation mortality of understory plants by size</p></td>
-<td><p>N/ha/yr</p></td>
+<td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MAINTAR_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MAINTAR_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>maintenance autotrophic respiration of canopy plants in kg carbon per m2 per second by size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MAINTAR_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MAINTAR_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>maintenance autotrophic respiration of understory plants in kg carbon per m2 per second by siz</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_AGESCEN_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_AGESCEN_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>age senescence mortality by size in number of plants per m2 per year, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_AGESCEN_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_AGESCEN_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>age senescence mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_BACKGROUND_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_BACKGROUND_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>background mortality by size in number of plants per m2 per year, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_BACKGROUND_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_BACKGROUND_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>background mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_CANOPY_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_CANOPY_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total mortality of canopy trees by size class in number of plants per m2, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_CANOPY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total mortality of canopy trees by size class in number of plants per m2</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_CSTARV_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_CSTARV_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>carbon starvation mortality by size in number of plants per m2 per year, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_CSTARV_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_CSTARV_SZ</p></td>
 <td><p>fates_levscls</p></td>
-<td><p>carbon starvation mortality by size in number of plants per m2 per year</p></td>
+<td><p>carbon starvation mortality by size in number of plants per m2 per year (both continous and te</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_FIRE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_FIRE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>fire mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_FREEZING_SE_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_FREEZING_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>freezing mortality by size in number of plants per m2 per event, secondary patches</p></td>
 <td><p>m-2 event-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_FREEZING_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_FREEZING_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>freezing mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_HYDRAULIC_SE_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_HYDRAULIC_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>hydraulic mortality by size in number of plants per m2 per year, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_HYDRAULIC_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_HYDRAULIC_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>hydraulic mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_IMPACT_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_IMPACT_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>impact mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_LOGGING_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_LOGGING_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>logging mortality by size in number of plants per m2 per event, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_LOGGING_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_LOGGING_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>logging mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_SENESCENCE_SE_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_SENESCENCE_SE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>senescence mortality by size in number of plants per m2 per event, secondary patches</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_SENESCENCE_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_SENESCENCE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>senescence mortality by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_TERMINATION_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_TERMINATION_SZ</p></td>
 <td><p>fates_levscls</p></td>
-<td><p>termination mortality by size in number of plants per m2 per year</p></td>
+<td><p>termination mortality (excluding C-starvation) by size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total mortality of understory trees by size class in individuals per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>number of canopy plants per m2 by size class</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_SZ</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>number of plants per m2 by size class</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_USTORY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>number of understory plants per m2 by size class</p></td>
 <td><p>m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP_CANOPY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_NPP_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>NPP of canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPP_USTORY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_NPP_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>NPP of understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_PROMOTION_RATE_SZ</p></td>
+<tr class="row-even"><td><p>FATES_PROMOTION_RATE_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>promotion rate from understory to canopy by size class</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_RDARK_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_RDARK_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>dark respiration for canopy plants in kg carbon per m2 per second by size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_RDARK_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_RDARK_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>dark respiration for understory plants in kg carbon per m2 per second by size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SAI_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_SAI_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>stem area index (SAI) of canopy plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SAI_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_SAI_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>stem area index (SAI) of understory plants by size class</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SAPWOODCTURN_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_SAPWOODCTURN_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>sapwood turnover (non-mortal) for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SAPWOODCTURN_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_SAPWOODCTURN_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>sapwood C turnover (non-mortal) for understory plants by size class in kg carbon per m2 per se</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SAPWOOD_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_SAPWOOD_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to sapwood C for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SAPWOOD_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_SAPWOOD_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to sapwood C for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SEED_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_SEED_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to reproductive C for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SEED_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_SEED_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to reproductive C for understory plants by size class in kg carbon per m2 per secon</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SEED_PROD_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_SEED_PROD_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>seed production of canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SEED_PROD_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_SEED_PROD_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>seed production of understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STORECTURN_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_STORECTURN_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>storage turnover (non-mortal) for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STORECTURN_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_STORECTURN_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>storage C turnover (non-mortal) for understory plants by size class in kg carbon per m2 per se</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STORE_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_STORE_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to storage C for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STORE_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_STORE_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to storage C for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STRUCTCTURN_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_STRUCTCTURN_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>structural C turnover (non-mortal) for canopy plants by size class in kg carbon per m2 per sec</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STRUCTCTURN_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_STRUCTCTURN_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>structural C turnover (non-mortal) for understory plants by size class in kg carbon per m2 per</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STRUCT_ALLOC_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_STRUCT_ALLOC_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to structural C for canopy plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STRUCT_ALLOC_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_STRUCT_ALLOC_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>allocation to structural C for understory plants by size class in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_TRIMMING_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_TRIMMING_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>trimming term of canopy plants weighted by plant density, by size class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_TRIMMING_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_TRIMMING_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>trimming term of understory plants weighted by plant density, by size class</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_VEGC_ABOVEGROUND_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_VEGC_ABOVEGROUND_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>aboveground biomass by size class in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_VEGC_SZ</p></td>
+<tr class="row-even"><td><p>FATES_VEGC_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>total biomass by size class in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_YESTCANLEV_CANOPY_SZ</p></td>
+<tr class="row-odd"><td><p>FATES_YESTCANLEV_CANOPY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>yesterdays canopy level for canopy plants by size class in number of plants per m2</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_YESTCANLEV_USTORY_SZ</p></td>
+<tr class="row-even"><td><p>FATES_YESTCANLEV_USTORY_SZ</p></td>
 <td><p>fates_levscls</p></td>
 <td><p>yesterdays canopy level for understory plants by size class in number of plants per m2</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_ABOVEGROUND_MORT_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_ABOVEGROUND_MORT_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Aboveground flux of carbon from AGB to necromass due to mortality</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_ABOVEGROUND_PROD_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_ABOVEGROUND_PROD_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Aboveground carbon productivity</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AGSAPMAINTAR_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_AGSAPMAINTAR_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>above-ground sapwood maintenance autotrophic respiration in kg carbon per m2 per second by pft</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AGSAPWOOD_ALLOC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_AGSAPWOOD_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to above-ground sapwood by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AGSTRUCT_ALLOC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_AGSTRUCT_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to above-ground structural (deadwood) by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AUTORESP_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_AUTORESP_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>autotrophic respiration of canopy plants by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_AUTORESP_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_AUTORESP_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>total autotrophic respiration in kg carbon per m2 per second by pft/size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_AUTORESP_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_AUTORESP_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>autotrophic respiration of understory plants by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_BASALAREA_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_BASALAREA_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>basal area by pft/size</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_BGSAPMAINTAR_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_BGSAPMAINTAR_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>below-ground sapwood maintenance autotrophic respiration in kg carbon per m2 per second by pft</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_BGSAPWOOD_ALLOC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_BGSAPWOOD_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to below-ground sapwood by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_BGSTRUCT_ALLOC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_BGSTRUCT_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to below-ground structural (deadwood) by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_C13DISC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_C13DISC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>C13 discrimination by pft/size</p></td>
 <td><p>per mil</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DDBH_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_CROWNAREA_CANOPY_SZPF</p></td>
+<td><p>fates_levscpf</p></td>
+<td><p>Total crown area of canopy plants by pft/size</p></td>
+<td><p>m2 m-2</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>FATES_CROWNAREA_USTORY_SZPF</p></td>
+<td><p>fates_levscpf</p></td>
+<td><p>Total crown area of understory plants by pft/size</p></td>
+<td><p>m2 m-2</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>FATES_DDBH_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>diameter growth increment by pft/size</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_DDBH_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_DDBH_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>diameter growth increment by pft/size</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_DDBH_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_DDBH_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>diameter growth increment by pft/size</p></td>
 <td><p>m m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOTC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_FROOTC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>fine-root carbon mass by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_FROOTMAINTAR_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_FROOTMAINTAR_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>fine root maintenance autotrophic respiration in kg carbon per m2 per second by pft/size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_FROOT_ALLOC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_FROOT_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to fine roots by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GPP_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_GPP_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>gross primary production of canopy plants by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GPP_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_GPP_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>gross primary production by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GPP_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_GPP_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>gross primary production of understory plants by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GROWAR_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_GROWAR_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>growth autotrophic respiration in kg carbon per m2 per second by pft/size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_GROWTHFLUX_FUSION_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_GROWTHFLUX_FUSION_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>flux of individuals into a given size class bin via fusion</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_GROWTHFLUX_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_GROWTHFLUX_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>flux of individuals into a given size class bin via growth and recruitment</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LAI_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_LAI_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Leaf area index (LAI) of canopy plants by pft/size</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LAI_USTORY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_LAI_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Leaf area index (LAI) of understory plants by pft/size</p></td>
 <td><p>m2 m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LEAFC_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_LEAFC_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>biomass in leaves of canopy plants by pft/size in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LEAFC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_LEAFC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>leaf carbon mass by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_LEAFC_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_LEAFC_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>biomass in leaves of understory plants by pft/size in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_LEAF_ALLOC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_LEAF_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to leaves by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_M3_MORTALITY_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_M3_MORTALITY_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>C starvation mortality of canopy plants by pft/size</p></td>
-<td><p>N/ha/yr</p></td>
+<td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_M3_MORTALITY_USTORY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_M3_MORTALITY_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>C starvation mortality of understory plants by pft/size</p></td>
-<td><p>N/ha/yr</p></td>
+<td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MAINTAR_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MAINTAR_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>maintenance autotrophic respiration in kg carbon per m2 per second by pft/size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_AGESCEN_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_AGESCEN_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>age senescence mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_BACKGROUND_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_BACKGROUND_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>background mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_CAMBIALBURN_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_CAMBIALBURN_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>fire mortality from cambial burn by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_CANOPY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>total mortality of canopy plants by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_CROWNSCORCH_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_CROWNSCORCH_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>fire mortality from crown scorch by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_CSTARV_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_CSTARV_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
-<td><p>carbon starvation mortality by pft/size in number of plants per m2 per year</p></td>
+<td><p>carbon starvation mortality by pft/size in number of plants per m2 per year (both continous an</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_FIRE_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_FIRE_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>fire mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_FREEZING_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_FREEZING_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>freezing mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_HYDRAULIC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_HYDRAULIC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>hydraulic mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_IMPACT_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_IMPACT_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>impact mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_LOGGING_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_LOGGING_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>logging mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_SENESCENCE_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_SENESCENCE_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>senescence mortality by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_MORTALITY_TERMINATION_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_MORTALITY_TERMINATION_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
-<td><p>termination mortality by pft/size in number pf plants per m2 per year</p></td>
+<td><p>termination mortality (excluding C-starvation) by pft/size in number pf plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_MORTALITY_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_MORTALITY_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>total mortality of understory plants by pft/size in number of plants per m2 per year</p></td>
 <td><p>m-2 yr-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_CANOPY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>number of canopy plants by size/pft per m2</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPLANT_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_NPLANT_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>stem number density by pft/size</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_NPLANT_USTORY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_NPLANT_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>density of understory plants by pft/size in number of plants per m2</p></td>
 <td><p>m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_NPP_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_NPP_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>total net primary production by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_RDARK_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_RDARK_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>dark portion of maintenance autotrophic respiration in kg carbon per m2 per second by pft/size</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_REPROC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_REPROC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>reproductive carbon mass (on plant) by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_SAPWOODC_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_SAPWOODC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>sapwood carbon mass by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_SEED_ALLOC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_SEED_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to seeds by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STOREC_CANOPY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_STOREC_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>biomass in storage pools of canopy plants by pft/size in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STOREC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_STOREC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>storage carbon mass by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STOREC_TF_CANOPY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_STOREC_TF_CANOPY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Storage C fraction of target by size x pft, in the canopy</p></td>
 <td><p>kg kg-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STOREC_TF_USTORY_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_STOREC_TF_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>Storage C fraction of target by size x pft, in the understory</p></td>
 <td><p>kg kg-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_STOREC_USTORY_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_STOREC_USTORY_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>biomass in storage pools of understory plants by pft/size in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_STORE_ALLOC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_STORE_ALLOC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>allocation to storage C by pft/size in kg carbon per m2 per second</p></td>
 <td><p>kg m-2 s-1</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FATES_VEGC_ABOVEGROUND_SZPF</p></td>
+<tr class="row-odd"><td><p>FATES_VEGC_ABOVEGROUND_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>aboveground biomass by pft/size in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FATES_VEGC_SZPF</p></td>
+<tr class="row-even"><td><p>FATES_VEGC_SZPF</p></td>
 <td><p>fates_levscpf</p></td>
 <td><p>total vegetation biomass in live plants by size-class x pft in kg carbon per m2</p></td>
 <td><p>kg m-2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>ACTUAL_IMMOB_NH4</p></td>
+<tr class="row-odd"><td><p>ACTUAL_IMMOB_NH4</p></td>
 <td><p>levdcmp</p></td>
 <td><p>immobilization of NH4</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>ACTUAL_IMMOB_NO3</p></td>
+<tr class="row-even"><td><p>ACTUAL_IMMOB_NO3</p></td>
 <td><p>levdcmp</p></td>
 <td><p>immobilization of NO3</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>ACTUAL_IMMOB_vr</p></td>
+<tr class="row-odd"><td><p>ACTUAL_IMMOB_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>actual N immobilization</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FMAX_DENIT_CARBONSUBSTRATE</p></td>
+<tr class="row-even"><td><p>FMAX_DENIT_CARBONSUBSTRATE</p></td>
 <td><p>levdcmp</p></td>
 <td><p>FMAX_DENIT_CARBONSUBSTRATE</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FMAX_DENIT_NITRATE</p></td>
+<tr class="row-odd"><td><p>FMAX_DENIT_NITRATE</p></td>
 <td><p>levdcmp</p></td>
 <td><p>FMAX_DENIT_NITRATE</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>FPI_vr</p></td>
+<tr class="row-even"><td><p>FPI_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>fraction of potential immobilization</p></td>
 <td><p>proportion</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>F_DENIT_BASE</p></td>
+<tr class="row-odd"><td><p>F_DENIT_BASE</p></td>
 <td><p>levdcmp</p></td>
 <td><p>F_DENIT_BASE</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>F_DENIT_vr</p></td>
+<tr class="row-even"><td><p>F_DENIT_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>denitrification flux</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>F_NIT_vr</p></td>
+<tr class="row-odd"><td><p>F_NIT_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>nitrification flux</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>GROSS_NMIN_vr</p></td>
+<tr class="row-even"><td><p>GROSS_NMIN_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>gross rate of N mineralization</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>K_LIT_CEL</p></td>
+<tr class="row-odd"><td><p>K_LIT_CEL</p></td>
 <td><p>levdcmp</p></td>
 <td><p>cellulosic litter potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>K_LIT_LIG</p></td>
+<tr class="row-even"><td><p>K_LIT_LIG</p></td>
 <td><p>levdcmp</p></td>
 <td><p>lignin litter potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>K_LIT_MET</p></td>
+<tr class="row-odd"><td><p>K_LIT_MET</p></td>
 <td><p>levdcmp</p></td>
 <td><p>metabolic litter potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>K_NITR</p></td>
+<tr class="row-even"><td><p>K_NITR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>K_NITR</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>K_NITR_H2O</p></td>
+<tr class="row-odd"><td><p>K_NITR_H2O</p></td>
 <td><p>levdcmp</p></td>
 <td><p>K_NITR_H2O</p></td>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>K_NITR_PH</p></td>
+<tr class="row-even"><td><p>K_NITR_PH</p></td>
 <td><p>levdcmp</p></td>
 <td><p>K_NITR_PH</p></td>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>K_NITR_T</p></td>
+<tr class="row-odd"><td><p>K_NITR_T</p></td>
 <td><p>levdcmp</p></td>
 <td><p>K_NITR_T</p></td>
 <td><p>unitless</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>K_SOM_ACT</p></td>
+<tr class="row-even"><td><p>K_SOM_ACT</p></td>
 <td><p>levdcmp</p></td>
 <td><p>active soil organic potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>K_SOM_PAS</p></td>
+<tr class="row-odd"><td><p>K_SOM_PAS</p></td>
 <td><p>levdcmp</p></td>
 <td><p>passive soil organic potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>K_SOM_SLO</p></td>
+<tr class="row-even"><td><p>K_SOM_SLO</p></td>
 <td><p>levdcmp</p></td>
 <td><p>slow soil organic ma potential loss coefficient</p></td>
 <td><p>1/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>L1_PATHFRAC_S1_vr</p></td>
+<tr class="row-odd"><td><p>L1_PATHFRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from metabolic litter to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>L1_RESP_FRAC_S1_vr</p></td>
+<tr class="row-even"><td><p>L1_RESP_FRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from metabolic litter to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>L2_PATHFRAC_S1_vr</p></td>
+<tr class="row-odd"><td><p>L2_PATHFRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from cellulosic litter to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>L2_RESP_FRAC_S1_vr</p></td>
+<tr class="row-even"><td><p>L2_RESP_FRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from cellulosic litter to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>L3_PATHFRAC_S2_vr</p></td>
+<tr class="row-odd"><td><p>L3_PATHFRAC_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from lignin litter to slow soil organic ma</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>L3_RESP_FRAC_S2_vr</p></td>
+<tr class="row-even"><td><p>L3_RESP_FRAC_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from lignin litter to slow soil organic ma</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_CEL_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>LIT_CEL_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>cellulosic litter C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_CEL_C_TO_SOM_ACT_C_v</p></td>
+<tr class="row-even"><td><p>LIT_CEL_C_TO_SOM_ACT_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of cellulosic litter C to active soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_CEL_HR_vr</p></td>
+<tr class="row-odd"><td><p>LIT_CEL_HR_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from cellulosic litter</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_CEL_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>LIT_CEL_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>cellulosic litter N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_CEL_N_TO_SOM_ACT_N_v</p></td>
+<tr class="row-odd"><td><p>LIT_CEL_N_TO_SOM_ACT_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of cellulosic litter N to active soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_CEL_N_vr</p></td>
+<tr class="row-even"><td><p>LIT_CEL_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>LIT_CEL N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_LIG_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>LIT_LIG_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>lignin litter C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_LIG_C_TO_SOM_SLO_C_v</p></td>
+<tr class="row-even"><td><p>LIT_LIG_C_TO_SOM_SLO_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of lignin litter C to slow soil organic ma C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_LIG_HR_vr</p></td>
+<tr class="row-odd"><td><p>LIT_LIG_HR_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from lignin litter</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_LIG_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>LIT_LIG_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>lignin litter N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_LIG_N_TO_SOM_SLO_N_v</p></td>
+<tr class="row-odd"><td><p>LIT_LIG_N_TO_SOM_SLO_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of lignin litter N to slow soil organic ma N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_LIG_N_vr</p></td>
+<tr class="row-even"><td><p>LIT_LIG_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>LIT_LIG N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_MET_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>LIT_MET_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>metabolic litter C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_MET_C_TO_SOM_ACT_C_v</p></td>
+<tr class="row-even"><td><p>LIT_MET_C_TO_SOM_ACT_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of metabolic litter C to active soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_MET_HR_vr</p></td>
+<tr class="row-odd"><td><p>LIT_MET_HR_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from metabolic litter</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_MET_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>LIT_MET_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>metabolic litter N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>LIT_MET_N_TO_SOM_ACT_N_v</p></td>
+<tr class="row-odd"><td><p>LIT_MET_N_TO_SOM_ACT_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of metabolic litter N to active soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>LIT_MET_N_vr</p></td>
+<tr class="row-even"><td><p>LIT_MET_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>LIT_MET N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>NDEP_PROF</p></td>
+<tr class="row-odd"><td><p>NDEP_PROF</p></td>
 <td><p>levdcmp</p></td>
 <td><p>profile for atmospheric N  deposition</p></td>
 <td><p>1/m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>NET_NMIN_vr</p></td>
+<tr class="row-even"><td><p>NET_NMIN_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>net rate of N mineralization</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>NFIXATION_PROF</p></td>
+<tr class="row-odd"><td><p>NFIXATION_PROF</p></td>
 <td><p>levdcmp</p></td>
 <td><p>profile for biological N fixation</p></td>
 <td><p>1/m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>POTENTIAL_IMMOB_vr</p></td>
+<tr class="row-even"><td><p>POTENTIAL_IMMOB_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>potential N immobilization</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>POT_F_DENIT_vr</p></td>
+<tr class="row-odd"><td><p>POT_F_DENIT_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>potential denitrification flux</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>POT_F_NIT_vr</p></td>
+<tr class="row-even"><td><p>POT_F_NIT_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>potential nitrification flux</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>S1_PATHFRAC_S2_vr</p></td>
+<tr class="row-odd"><td><p>S1_PATHFRAC_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from active soil organic to slow soil organic ma</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>S1_PATHFRAC_S3_vr</p></td>
+<tr class="row-even"><td><p>S1_PATHFRAC_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from active soil organic to passive soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>S1_RESP_FRAC_S2_vr</p></td>
+<tr class="row-odd"><td><p>S1_RESP_FRAC_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from active soil organic to slow soil organic ma</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>S1_RESP_FRAC_S3_vr</p></td>
+<tr class="row-even"><td><p>S1_RESP_FRAC_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from active soil organic to passive soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>S2_PATHFRAC_S1_vr</p></td>
+<tr class="row-odd"><td><p>S2_PATHFRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from slow soil organic ma to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>S2_PATHFRAC_S3_vr</p></td>
+<tr class="row-even"><td><p>S2_PATHFRAC_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from slow soil organic ma to passive soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>S2_RESP_FRAC_S1_vr</p></td>
+<tr class="row-odd"><td><p>S2_RESP_FRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from slow soil organic ma to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>S2_RESP_FRAC_S3_vr</p></td>
+<tr class="row-even"><td><p>S2_RESP_FRAC_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from slow soil organic ma to passive soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>S3_PATHFRAC_S1_vr</p></td>
+<tr class="row-odd"><td><p>S3_PATHFRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>PATHFRAC from passive soil organic to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>S3_RESP_FRAC_S1_vr</p></td>
+<tr class="row-even"><td><p>S3_RESP_FRAC_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>respired from passive soil organic to active soil organic</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_PLANT_vr</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_PLANT_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>plant uptake of soil mineral N</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S1N_L1_vr</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S1N_L1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of LIT_METto SOM_ACT</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S1N_L2_vr</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S1N_L2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of LIT_CELto SOM_ACT</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S1N_S2_vr</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S1N_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of SOM_SLOto SOM_ACT</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S1N_S3_vr</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S1N_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of SOM_PASto SOM_ACT</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S2N_L3_vr</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S2N_L3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of LIT_LIGto SOM_SLO</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S2N_S1_vr</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S2N_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of SOM_ACTto SOM_SLO</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMINN_TO_S3N_S1_vr</p></td>
+<tr class="row-even"><td><p>SMINN_TO_S3N_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of SOM_ACTto SOM_PAS</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMINN_TO_S3N_S2_vr</p></td>
+<tr class="row-odd"><td><p>SMINN_TO_S3N_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>mineral N flux for decomp. of SOM_SLOto SOM_PAS</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMIN_NH4_TO_PLANT</p></td>
+<tr class="row-even"><td><p>SMIN_NH4_TO_PLANT</p></td>
 <td><p>levdcmp</p></td>
 <td><p>plant uptake of NH4</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMIN_NO3_LEACHED_vr</p></td>
+<tr class="row-odd"><td><p>SMIN_NO3_LEACHED_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>soil NO3 pool loss to leaching</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMIN_NO3_MASSDENS</p></td>
+<tr class="row-even"><td><p>SMIN_NO3_MASSDENS</p></td>
 <td><p>levdcmp</p></td>
 <td><p>SMIN_NO3_MASSDENS</p></td>
 <td><p>ugN/cm^3 soil</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SMIN_NO3_RUNOFF_vr</p></td>
+<tr class="row-odd"><td><p>SMIN_NO3_RUNOFF_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>soil NO3 pool loss to runoff</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SMIN_NO3_TO_PLANT</p></td>
+<tr class="row-even"><td><p>SMIN_NO3_TO_PLANT</p></td>
 <td><p>levdcmp</p></td>
 <td><p>plant uptake of NO3</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOILN_vr</p></td>
+<tr class="row-odd"><td><p>SOILN_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>SOIL N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>SOM_ACT_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>active soil organic C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_C_TO_SOM_PAS_C_v</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_C_TO_SOM_PAS_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of active soil organic C to passive soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_C_TO_SOM_SLO_C_v</p></td>
+<tr class="row-even"><td><p>SOM_ACT_C_TO_SOM_SLO_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of active soil organic C to slow soil organic ma C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_HR_S2_vr</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_HR_S2_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from active soil organic</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_HR_S3_vr</p></td>
+<tr class="row-even"><td><p>SOM_ACT_HR_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from active soil organic</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>active soil organic N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_N_TO_SOM_PAS_N_v</p></td>
+<tr class="row-even"><td><p>SOM_ACT_N_TO_SOM_PAS_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of active soil organic N to passive soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ACT_N_TO_SOM_SLO_N_v</p></td>
+<tr class="row-odd"><td><p>SOM_ACT_N_TO_SOM_SLO_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of active soil organic N to slow soil organic ma N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_ACT_N_vr</p></td>
+<tr class="row-even"><td><p>SOM_ACT_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>SOM_ACT N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_ADV_COEF</p></td>
+<tr class="row-odd"><td><p>SOM_ADV_COEF</p></td>
 <td><p>levdcmp</p></td>
 <td><p>advection term for vertical SOM translocation</p></td>
 <td><p>m/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_DIFFUS_COEF</p></td>
+<tr class="row-even"><td><p>SOM_DIFFUS_COEF</p></td>
 <td><p>levdcmp</p></td>
 <td><p>diffusion coefficient for vertical SOM translocation</p></td>
 <td><p>m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>passive soil organic C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_C_TO_SOM_ACT_C_v</p></td>
+<tr class="row-even"><td><p>SOM_PAS_C_TO_SOM_ACT_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of passive soil organic C to active soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_HR_vr</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_HR_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from passive soil organic</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>SOM_PAS_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>passive soil organic N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_PAS_N_TO_SOM_ACT_N_v</p></td>
+<tr class="row-odd"><td><p>SOM_PAS_N_TO_SOM_ACT_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of passive soil organic N to active soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_PAS_N_vr</p></td>
+<tr class="row-even"><td><p>SOM_PAS_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>SOM_PAS N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_C_TNDNCY_VERT_TR</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_C_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>slow soil organic ma C tendency due to vertical transport</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_C_TO_SOM_ACT_C_v</p></td>
+<tr class="row-even"><td><p>SOM_SLO_C_TO_SOM_ACT_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of slow soil organic ma C to active soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_C_TO_SOM_PAS_C_v</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_C_TO_SOM_PAS_C_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of slow soil organic ma C to passive soil organic C</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_HR_S1_vr</p></td>
+<tr class="row-even"><td><p>SOM_SLO_HR_S1_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from slow soil organic ma</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_HR_S3_vr</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_HR_S3_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>Het. Resp. from slow soil organic ma</p></td>
 <td><p>gC/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_N_TNDNCY_VERT_TR</p></td>
+<tr class="row-even"><td><p>SOM_SLO_N_TNDNCY_VERT_TR</p></td>
 <td><p>levdcmp</p></td>
 <td><p>slow soil organic ma N tendency due to vertical transport</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_N_TO_SOM_ACT_N_v</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_N_TO_SOM_ACT_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of slow soil organic ma N to active soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>SOM_SLO_N_TO_SOM_PAS_N_v</p></td>
+<tr class="row-even"><td><p>SOM_SLO_N_TO_SOM_PAS_N_v</p></td>
 <td><p>levdcmp</p></td>
 <td><p>decomp. of slow soil organic ma N to passive soil organic N</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>SOM_SLO_N_vr</p></td>
+<tr class="row-odd"><td><p>SOM_SLO_N_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>SOM_SLO N (vertically resolved)</p></td>
 <td><p>gN/m^3</p></td>
 <td><p>T</p></td>
 </tr>
-<tr class="row-odd"><td><p>SUPPLEMENT_TO_SMINN_vr</p></td>
+<tr class="row-even"><td><p>SUPPLEMENT_TO_SMINN_vr</p></td>
 <td><p>levdcmp</p></td>
 <td><p>supplemental N supply</p></td>
 <td><p>gN/m^3/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>WFPS</p></td>
+<tr class="row-odd"><td><p>WFPS</p></td>
 <td><p>levdcmp</p></td>
 <td><p>WFPS</p></td>
 <td><p>percent</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>anaerobic_frac</p></td>
+<tr class="row-even"><td><p>anaerobic_frac</p></td>
 <td><p>levdcmp</p></td>
 <td><p>anaerobic_frac</p></td>
 <td><p>m3/m3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>diffus</p></td>
+<tr class="row-odd"><td><p>diffus</p></td>
 <td><p>levdcmp</p></td>
 <td><p>diffusivity</p></td>
 <td><p>m^2/s</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>fr_WFPS</p></td>
+<tr class="row-even"><td><p>fr_WFPS</p></td>
 <td><p>levdcmp</p></td>
 <td><p>fr_WFPS</p></td>
 <td><p>fraction</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>n2_n2o_ratio_denit</p></td>
+<tr class="row-odd"><td><p>n2_n2o_ratio_denit</p></td>
 <td><p>levdcmp</p></td>
 <td><p>n2_n2o_ratio_denit</p></td>
 <td><p>gN/gN</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>r_psi</p></td>
+<tr class="row-even"><td><p>r_psi</p></td>
 <td><p>levdcmp</p></td>
 <td><p>r_psi</p></td>
 <td><p>m</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>ratio_k1</p></td>
+<tr class="row-odd"><td><p>ratio_k1</p></td>
 <td><p>levdcmp</p></td>
 <td><p>ratio_k1</p></td>
 <td><p>none</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>ratio_no3_co2</p></td>
+<tr class="row-even"><td><p>ratio_no3_co2</p></td>
 <td><p>levdcmp</p></td>
 <td><p>ratio_no3_co2</p></td>
 <td><p>ratio</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>soil_bulkdensity</p></td>
+<tr class="row-odd"><td><p>soil_bulkdensity</p></td>
 <td><p>levdcmp</p></td>
 <td><p>soil_bulkdensity</p></td>
 <td><p>kg/m3</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>soil_co2_prod</p></td>
+<tr class="row-even"><td><p>soil_co2_prod</p></td>
 <td><p>levdcmp</p></td>
 <td><p>soil_co2_prod</p></td>
 <td><p>ug C / g soil / day</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>FGR_SOIL_R</p></td>
+<tr class="row-odd"><td><p>CONC_CH4_SAT</p></td>
+<td><p>levgrnd</p></td>
+<td><p>CH4 soil Concentration for inundated / lake area</p></td>
+<td><p>mol/m3</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-even"><td><p>CONC_CH4_UNSAT</p></td>
+<td><p>levgrnd</p></td>
+<td><p>CH4 soil Concentration for non-inundated area</p></td>
+<td><p>mol/m3</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>FGR_SOIL_R</p></td>
 <td><p>levgrnd</p></td>
 <td><p>Rural downward heat flux at interface below each soil layer</p></td>
 <td><p>watt/m^2</p></td>
 <td><p>F</p></td>
 </tr>
-<tr class="row-odd"><td><p>HK</p></td>
+<tr class="row-even"><td><p>HK</p></td>
 <td><p>levgrnd</p></td>
 <td><p>hydraulic conductivity (natural vegetated and crop landunits only)</p></td>
 <td><p>mm/s</p></td>
+<td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>O2_DECOMP_DEPTH_UNSAT</p></td>
+<td><p>levgrnd</p></td>
+<td><p>O2 consumption from HR and AR for non-inundated area</p></td>
+<td><p>mol/m3/s</p></td>
 <td><p>F</p></td>
 </tr>
 <tr class="row-even"><td><p>SMP</p></td>
@@ -8222,6 +8627,18 @@ use_fates =  T</p>
 <td><p>Snow layer thicknesses (ice landunits only)</p></td>
 <td><p>m</p></td>
 <td><p>F</p></td>
+</tr>
+<tr class="row-odd"><td><p>CONC_O2_SAT</p></td>
+<td><p>levsoi</p></td>
+<td><p>O2 soil Concentration for inundated / lake area</p></td>
+<td><p>mol/m3</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>CONC_O2_UNSAT</p></td>
+<td><p>levsoi</p></td>
+<td><p>O2 soil Concentration for non-inundated area</p></td>
+<td><p>mol/m3</p></td>
+<td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>FATES_FRAGMENTATION_SCALER_SL</p></td>
 <td><p>levsoi</p></td>

@@ -1,0 +1,336 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>&lt;no title&gt; &mdash; ctsm CTSM master documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+    <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="ctsm CTSM master documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> ctsm
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                
+                  <div class="version-dropdown">
+                    <select class="version-list" id="version-list">
+                      <option value=''>CTSM1</option>
+                      
+                        
+                      
+                        
+                          <option value="">[placeholder]</option>
+                        
+                      
+                    </select>
+                  </div>
+                
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="users_guide/index.html">1. CTSM1 User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tech_note/index.html">2. CLM Technical Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lilac/index.html">3. CTSM-LILAC User’s Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">ctsm</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>&lt;no title&gt;</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/how-to-make-mesh.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <p># Creating an ESMF mesh file from a netCDF file</p>
+<p>This gist includes instructions for creating and visualizing a mesh file from a netcdf file with valid 1D or 2D lats and lons coordinates.</p>
+<ul class="simple">
+<li><p><strong>ESMF Mesh file</strong> aka <strong>Unstructured Grid File Format</strong> is a netcdf file (format) that includes the information about the grids coordinates and their connectivity to each other.</p></li>
+</ul>
+<p>Additional information about ESMF mesh files are available [here](<a class="reference external" href="https://earthsystemmodeling.org/docs/release/ESMF_8_0_1/ESMF_refdoc/node3.html#SECTION03028200000000000000">https://earthsystemmodeling.org/docs/release/ESMF_8_0_1/ESMF_refdoc/node3.html#SECTION03028200000000000000</a>).</p>
+<hr class="docutils" />
+<p>In this example, we will use <cite>./mesh_maker.py</cite> which uses <cite>mesh_type.py</cite> to create a mesh file and visualize it.</p>
+<p>1- First clone my fork and branch that includes these capabilities:
+<a href="#id1"><span class="problematic" id="id2">``</span></a>` Shell
+git clone <a class="reference external" href="https://github.com/negin513/ctsm.git">https://github.com/negin513/ctsm.git</a> ctsm_mesh
+cd ctsm_mesh</p>
+<p>git checkout subset_mesh_dask
+<a href="#id3"><span class="problematic" id="id4">``</span></a><a href="#id5"><span class="problematic" id="id6">`</span></a></p>
+<p>2- Next run mesh_maker.py for a netcdf file:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">cd</span> <span class="pre">tools/site_and_regional</span>
+<span class="pre">`</span></code>
+Check all the avaialble options:</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">./mesh_maker.py</span> <span class="pre">--help</span>
+<span class="pre">`</span></code></p>
+<p>The output shows all available options for this script:
+<a href="#id7"><span class="problematic" id="id8">``</span></a>`
+<a href="#id21"><span class="problematic" id="id22">|------------------------------------------------------------------|</span></a>
+<a href="#id23"><span class="problematic" id="id24">|---------------------  Instructions  -----------------------------|</span></a>
+<a href="#id25"><span class="problematic" id="id26">|------------------------------------------------------------------|</span></a>
+This script creates ESMF unstructured GRID (mesh file) from a netcdf
+file with valid lats and lons. Provided lats and lons can be 1D or 2D.</p>
+<p>For example for running WRF-CTSM cases, the user can create a mesh
+file for their domain :</p>
+<blockquote>
+<div><dl class="simple">
+<dt>./mesh_maker.py –input wrfinput_d01 –output my_region</dt><dd><p>–lat XLAT –lon XLONG –verbose</p>
+</dd>
+</dl>
+</div></blockquote>
+<dl>
+<dt>optional arguments:</dt><dd><dl class="option-list">
+<dt><kbd><span class="option">-h</span>, <span class="option">--help</span></kbd></dt>
+<dd><p>show this help message and exit</p>
+</dd>
+<dt><kbd><span class="option">--input <var>INPUT</var></span></kbd></dt>
+<dd><p>Netcdf input file for creating ESMF mesh.</p>
+</dd>
+<dt><kbd><span class="option">--output <var>OUTPUT</var></span></kbd></dt>
+<dd><p>Name of the ESMF mesh created.</p>
+</dd>
+<dt><kbd><span class="option">--outdir <var>OUT_DIR</var></span></kbd></dt>
+<dd><p>Output directory (only if name of output mesh is not
+defined)</p>
+</dd>
+<dt><kbd><span class="option">--lat <var>LAT_NAME</var></span></kbd></dt>
+<dd><p>Name of latitude varibale on netcdf input file. If none
+given, looks to find variables that include ‘lat’.</p>
+</dd>
+<dt><kbd><span class="option">--lon <var>LON_NAME</var></span></kbd></dt>
+<dd><p>Name of latitude varibale on netcdf input file. If none
+given, looks to find variables that include ‘lon’.</p>
+</dd>
+<dt><kbd><span class="option">--mask <var>MASK_NAME</var></span></kbd></dt>
+<dd><p>Name of mask varibale on netcdf input file. If none given,
+create a fake mask with values of 1.</p>
+</dd>
+<dt><kbd><span class="option">--area <var>AREA_NAME</var></span></kbd></dt>
+<dd><p>Name of area variable on netcdf input file. If none given,
+ESMF calculates element areas automatically.</p>
+</dd>
+<dt><kbd><span class="option">--overwrite</span></kbd></dt>
+<dd><p>If meshfile exists, overwrite the meshfile.</p>
+</dd>
+<dt><kbd><span class="option">-v</span>, <span class="option">--verbose</span></kbd></dt>
+<dd><p>Increase output verbosity</p>
+</dd>
+</dl>
+<p><a href="#id9"><span class="problematic" id="id10">``</span></a><a href="#id11"><span class="problematic" id="id12">`</span></a></p>
+</dd>
+</dl>
+<p>Let’s create a mesh file from a netcdf file with 1D lats and lons. On the sample files provided 1D lat and long coordinates are saved on <cite>lsmlat</cite> and <cite>lsmlon</cite> variables.</p>
+<p><code class="docutils literal notranslate"><span class="pre">`</span>
+<span class="pre">./mesh_maker.py</span> <span class="pre">--input</span> <span class="pre">/glade/scratch/negins/example_files/surfdata_4x5_hist_78pfts_CMIP6_simyr1850_275.0-330.0_-40-15_c220705.nc</span> <span class="pre">--output</span> <span class="pre">test_mesh_1d.nc</span> <span class="pre">--lat</span> <span class="pre">lsmlat</span> <span class="pre">--lon</span> <span class="pre">lsmlon</span> <span class="pre">--overwrite</span>
+<span class="pre">`</span></code>
+<cite>–verbose</cite> option also provide additional information for debugging.</p>
+<p>This script will create regional and global mesh plots. For example for the above files, the plos are:
+test_mesh_1d_regional.png
+![image](<a class="reference external" href="https://user-images.githubusercontent.com/17344536/200441736-972a8136-5c05-4bc9-9bca-b498d972914a.png">https://user-images.githubusercontent.com/17344536/200441736-972a8136-5c05-4bc9-9bca-b498d972914a.png</a>)</p>
+<p>test_mesh_1d_global.png</p>
+<p>![image](<a class="reference external" href="https://user-images.githubusercontent.com/17344536/200441753-d06e95d1-d85b-4216-9c23-d11ba89a31e4.png">https://user-images.githubusercontent.com/17344536/200441753-d06e95d1-d85b-4216-9c23-d11ba89a31e4.png</a>)</p>
+<dl class="simple">
+<dt>For example, let’s create a mesh file from a WRF input file for WRF-CTSM run.</dt><dd><p><a href="#id13"><span class="problematic" id="id14">``</span></a><a href="#id15"><span class="problematic" id="id16">`</span></a></p>
+</dd>
+</dl>
+<p>./mesh_maker.py –input /glade/scratch/negins/example_files/wrfinput_d01  –output test_mesh_wrf.nc –lat XLAT –lon XLONG –overwrite
+<a href="#id17"><span class="problematic" id="id18">``</span></a><a href="#id19"><span class="problematic" id="id20">`</span></a></p>
+<p>This produce mesh files for running for our WRF domain.</p>
+<p>Here is how the regional plot looks like for this mesh file:</p>
+<blockquote>
+<div><p>![image](<a class="reference external" href="https://user-images.githubusercontent.com/17344536/200442002-1ee5595c-9252-4934-a07c-2f6ad86aff1b.png">https://user-images.githubusercontent.com/17344536/200442002-1ee5595c-9252-4934-a07c-2f6ad86aff1b.png</a>)</p>
+</div></blockquote>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, UCAR.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+     
+<script>var version_json_loc = "../../versions.json";</script>
+
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/pop_ver.js"></script>
+    
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

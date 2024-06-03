@@ -214,12 +214,12 @@ the <a class="reference external" href="http://esmci.github.io/cime">CIME docume
 <p>Obtain CTSM by running:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/ESCOMP/CTSM.git
 <span class="nb">cd</span> CTSM
-./manage_externals/checkout_externals
+./bin/git-fleximod update
 </pre></div>
 </div>
 <p>Then build CTSM and its dependencies. On a machine that has been ported to CIME, the
-command will look like this (example given for NCAR’s <code class="docutils literal notranslate"><span class="pre">cheyenne</span></code> machine):</p>
-<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./lilac/build_ctsm /glade/scratch/<span class="nv">$USER</span>/ctsm_build_dir --machine cheyenne --compiler intel
+command will look like this (example given for NCAR’s <code class="docutils literal notranslate"><span class="pre">derecho</span></code> machine):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./lilac/build_ctsm /glade/scratch/<span class="nv">$USER</span>/ctsm_build_dir --machine derecho --compiler intel
 </pre></div>
 </div>
 <p>and then, before building the atmosphere model:</p>
@@ -274,7 +274,7 @@ information on compiler versions known to work with CESM, and thus CTSM.</p></li
 </li>
 <li><p>ESMF version 8 or later</p>
 <ul>
-<li><p><strong>ESMF is not needed in general for CTSM, but is needed for LILAC</strong></p></li>
+<li><p><strong>ESMF is needed for LILAC (and for CESM3 and later)</strong></p></li>
 </ul>
 </li>
 </ul>
@@ -285,12 +285,12 @@ information on compiler versions known to work with CESM, and thus CTSM.</p></li
 above</span></a>) can be obtained with:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/ESCOMP/CTSM.git
 <span class="nb">cd</span> CTSM
-./manage_externals/checkout_externals
+./bin/git-fleximod update
 </pre></div>
 </div>
 <p>By default, this will put you on the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch of CTSM, which is the main
 development branch. You can checkout a different branch or tag using <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span></code>;
-<strong>be sure to rerun</strong> <code class="docutils literal notranslate"><span class="pre">./manage_externals/checkout_externals</span></code> <strong>after doing so.</strong></p>
+<strong>be sure to rerun</strong> <code class="docutils literal notranslate"><span class="pre">./bin/git-fleximod</span> <span class="pre">update</span></code> <strong>after doing so.</strong></p>
 <p>For more details, see
 <a class="reference external" href="https://github.com/ESCOMP/CTSM/wiki/Quick-start-to-CTSM-development-with-git">https://github.com/ESCOMP/CTSM/wiki/Quick-start-to-CTSM-development-with-git</a></p>
 </div>
@@ -320,14 +320,15 @@ the <a class="reference external" href="http://esmci.github.io/cime">CIME docume
 </div>
 <div class="section" id="building-on-a-cime-supported-machine">
 <span id="id1"></span><h3><span class="section-number">3.2.1.4.2. </span>Building on a CIME-supported machine<a class="headerlink" href="#building-on-a-cime-supported-machine" title="Permalink to this headline">¶</a></h3>
-<p>If you are using a machine that has been ported to <a class="reference external" href="http://esmci.github.io/cime">CIME</a> (for example, NCAR’s <code class="docutils literal notranslate"><span class="pre">cheyenne</span></code>
+<p>If you are using a machine that has been ported to <a class="reference external" href="http://esmci.github.io/cime">CIME</a> (for example, NCAR’s <code class="docutils literal notranslate"><span class="pre">derecho</span></code>
 machine), then you do not need to specify much information to <code class="docutils literal notranslate"><span class="pre">build_ctsm</span></code>. In addition,
 in this case, CIME will load the appropriate modules and set the appropriate environment
 variables at build time, so you do not need to do anything to set up your environment
-ahead of time. <strong>Building CTSM with LILAC requires ESMF. ESMF is currently an optional
-CIME dependency, so many CIME-ported machines do not provide information on an ESMF
-installation. NCAR’s cheyenne machine DOES provide ESMF, but for other machines, you may
-need to add this to your CIME port.</strong></p>
+ahead of time. <strong>Building CTSM with LILAC requires ESMF. ESMF is an optional
+CIME dependency before CESM3 and not optional for CESM3.
+NCAR’s derecho machine DOES provide ESMF. For other machines, you may
+need to add this to your CIME port. Please see esmf.org for download and build
+instructions.</strong></p>
 <p>To build CTSM and its dependencies in this case, run:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./lilac/build_ctsm /PATH/TO/CTSM/BUILD --machine MACHINE --compiler COMPILER
 </pre></div>
@@ -398,7 +399,7 @@ then it is important to add <code class="docutils literal notranslate"><span cla
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./lilac/build_ctsm ~/ctsm_build_dir --os Darwin --compiler gnu --netcdf-path /usr/local --esmf-mkfile-path /Users/sacks/ESMF/esmf8.0.0/lib/libO/Darwin.gfortranclang.64.mpich3.default/esmf.mk --max-mpitasks-per-node <span class="m">4</span> --no-pnetcdf
 </pre></div>
 </div>
-<p>Example usage for NCAR’s <code class="docutils literal notranslate"><span class="pre">cheyenne</span></code> machine (a more complex case) is:</p>
+<p>Example usage for NCAR’s <code class="docutils literal notranslate"><span class="pre">derecho</span></code> machine (a more complex case) is:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>module purge
 module load ncarenv/1.3 python/3.7.9 cmake intel/19.1.1 esmf_libs mkl
 module use /glade/p/cesmdata/cseg/PROGS/modulefiles/esmfpkgs/intel/19.1.1/

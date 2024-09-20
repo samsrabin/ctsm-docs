@@ -126,9 +126,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../adding-new-resolutions/index.html">1.4. Adding New Resolutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-special-cases/index.html">1.5. Running Special Cases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-single-points/index.html">1.6. Running Single Point Regional Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../running-PTCLM/index.html">1.7. Running PTCLM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.8. Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.9. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.7. Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.8. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using-mesh-maker/index.html">1.9. Using mesh_maker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_note/index.html">2. CLM Technical Note</a></li>
@@ -202,7 +202,7 @@
             
   <div class="section" id="customizing-clm-s-namelist">
 <span id="customizing-a-case"></span><h1><span class="section-number">1.2.3. </span>Customizing CLM’s namelist<a class="headerlink" href="#customizing-clm-s-namelist" title="Permalink to this headline">¶</a></h1>
-<p>Once a case has run <strong>case.setup</strong>, we can then customize the case further, by editing the run-time namelist for CLM. First let’s list the definition of each namelist item and their valid values, and then we’ll list the default values for them. Next for some of the most used or tricky namelist items we’ll give examples of their use, and give you example namelists that highlight these features.</p>
+<p>Once a case has run <code class="docutils literal notranslate"><span class="pre">case.setup</span></code>, we can then customize the case further, by editing the run-time namelist for CLM. First let’s list the definition of each namelist item and their valid values, and then we’ll list the default values for them. Next for some of the most used or tricky namelist items we’ll give examples of their use, and give you example namelists that highlight these features.</p>
 <p>In the following, various examples of namelists are provided that feature the use of different namelist options to customize a case for particular uses. Most the examples revolve around how to customize the output history fields. This should give you a good basis for setting up your own CLM namelist.</p>
 <div class="section" id="definition-of-namelist-items-and-their-default-values">
 <span id="def-nl-items-and-defaults"></span><h2><span class="section-number">1.2.3.1. </span>Definition of Namelist items and their default values<a class="headerlink" href="#definition-of-namelist-items-and-their-default-values" title="Permalink to this headline">¶</a></h2>
@@ -315,14 +315,14 @@
 </div>
 <div class="section" id="various-ways-to-change-history-output-averaging-flags">
 <h3><span class="section-number">1.2.3.2.9. </span>Various ways to change history output averaging flags<a class="headerlink" href="#various-ways-to-change-history-output-averaging-flags" title="Permalink to this headline">¶</a></h3>
-<p>There are two ways to change the averaging of output history fields. The first is using <code class="docutils literal notranslate"><span class="pre">hist_avgflag_pertape</span></code> which gives a default value for each history stream, the second is when you add fields using <code class="docutils literal notranslate"><span class="pre">hist_fincl*</span></code>, you add an averaging flag to the end of the field name after a colon (for example ‘TSOI:X’, would output the maximum of TSOI). The types of averaging that can be done are:</p>
+<p>There are two ways to change the averaging of output history fields. The first is using <code class="docutils literal notranslate"><span class="pre">hist_avgflag_pertape</span></code> which gives a default value for each history stream, the second is when you add fields using <code class="docutils literal notranslate"><span class="pre">hist_fincl*</span></code>, you add an averaging flag to the end of the field name after a colon (for example <code class="docutils literal notranslate"><span class="pre">TSOI:X</span></code> would output the maximum of <code class="docutils literal notranslate"><span class="pre">TSOI</span></code>). The types of averaging that can be done are:</p>
 <ul class="simple">
-<li><p><em>A</em> Average, over the output interval.</p></li>
-<li><p><em>I</em> Instantaneous, output the value at the output interval.</p></li>
-<li><p><em>X</em> Maximum, over the output interval.</p></li>
-<li><p><em>M</em> Minimum, over the output interval.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span></code> Average, over the output interval.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span></code> Instantaneous, output the value at the output interval.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">X</span></code> Maximum, over the output interval.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">M</span></code> Minimum, over the output interval.</p></li>
 </ul>
-<p>The default averaging depends on the specific fields, but for most fields is an average. A sample user namelist <code class="docutils literal notranslate"><span class="pre">user_nl_clm</span></code> making the monthly output fields all averages (except TSOI for the first two streams and FIRE for the 5th stream), and adding auxiliary file streams for instantaneous (6-hourly), maximum (daily), minimum (daily), and average (daily). For some of the fields we diverge from the per-tape value given and customize to some different type of optimization.</p>
+<p>The default averaging depends on the specific fields, but for most fields is an average. A sample user namelist <code class="docutils literal notranslate"><span class="pre">user_nl_clm</span></code> making the monthly output fields all averages (except <code class="docutils literal notranslate"><span class="pre">TSOI</span></code> for the first two streams and <code class="docutils literal notranslate"><span class="pre">FIRE</span></code> for the 5th stream), and adding auxiliary file streams for instantaneous (6-hourly), maximum (daily), minimum (daily), and average (daily). For some of the fields we diverge from the per-tape value given and customize to some different type of optimization.</p>
 </div>
 <div class="section" id="example-user-nl-clm-namelist-with-various-ways-to-average-history-fields">
 <h3><span class="section-number">1.2.3.2.10. </span>Example: user_nl_clm namelist with various ways to average history fields<a class="headerlink" href="#example-user-nl-clm-namelist-with-various-ways-to-average-history-fields" title="Permalink to this headline">¶</a></h3>
@@ -341,7 +341,7 @@
 <span class="n">hist_nhtfrq</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span><span class="p">,</span> <span class="o">-</span><span class="mi">24</span>
 </pre></div>
 </div>
-<p>In the example we put the same list of fields on each of the tapes: soil-temperature, ground temperature, vegetation temperature, emitted longwave radiation, reflected solar radiation, sensible heat, total latent-heat, and total water storage. We also modify the soil-temperature for the primary and secondary auxiliary tapes by outputting them for a maximum instead of the prescribed per-tape of average and instantaneous respectively. For the tertiary auxiliary tape we output ground temperature instantaneous instead of as a maximum, and for the fourth auxiliary tape we output vegetation temperature instantaneous instead of as a minimum. Finally, for the fifth auxiliary tapes we output <code class="docutils literal notranslate"><span class="pre">FIRE</span></code> instantaneously instead of as an average.</p>
+<p>In the example we put the same list of fields on each of the tapes: soil-temperature, ground temperature, vegetation temperature, emitted longwave radiation, reflected solar radiation, sensible heat, total latent-heat, and total water storage. We also modify the soil temperature for the primary and secondary auxiliary tapes by outputting them for a maximum instead of the prescribed per-tape of average and instantaneous respectively. For the tertiary auxiliary tape we output ground temperature instantaneous instead of as a maximum, and for the fourth auxiliary tape we output vegetation temperature instantaneous instead of as a minimum. Finally, for the fifth auxiliary tapes we output <code class="docutils literal notranslate"><span class="pre">FIRE</span></code> instantaneously instead of as an average.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>We also use <code class="docutils literal notranslate"><span class="pre">hist_empty_htapes</span></code> as in the previous example, so we can list ONLY the fields that we want on the primary history tapes.</p>
@@ -366,13 +366,13 @@
 </div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>LAND and COLS are also options to the pertape averaging, but currently there is a bug with them and they fail to work.</p>
+<p><code class="docutils literal notranslate"><span class="pre">LAND</span></code> and <code class="docutils literal notranslate"><span class="pre">COLS</span></code> are also options to the pertape averaging, but currently there is a bug with them and they fail to work.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Technically the default for hist_nhtfrq is for primary files output monthly and the other auxiliary tapes for daily, so we don’t actually have to include hist_nhtfrq, we could use the default for it. Here we specify it for clarity.</p>
+<p>Technically the default for <code class="docutils literal notranslate"><span class="pre">hist_nhtfrq</span></code> is for primary files output monthly and the other auxiliary tapes for daily, so we don’t actually have to include <code class="docutils literal notranslate"><span class="pre">hist_nhtfrq</span></code>, we could use the default for it. Here we specify it for clarity.</p>
 </div>
-<p>Visualizing global 1D vector files will take effort. You’ll probably want to do some post-processing and possibly just extract out single points of interest to see what is going on. Since, the output is a 1D vector, of only land-points traditional plots won’t be helpful. The number of points per grid-cell will also vary for anything, but grid-cell averaging. You’ll need to use the output fields pfts1d_ixy, and pfts1d_jxy, to get the mapping of the fields to the global 2D array. pfts1d_itype_veg gives you the PFT number for each PFT. Most likely you’ll want to do this analysis in a data processing tool (such as NCL, Matlab, Mathmatica, IDL, etcetera that is able to read and process NetCDF data files).</p>
+<p>Visualizing global 1D vector files will take effort. You’ll probably want to do some post-processing and possibly just extract out single points of interest to see what is going on. Since the output is a 1D vector of only land points, traditional plots won’t be helpful. The number of points per grid-cell will also vary for anything but grid-cell averaging. You’ll need to use the output fields <code class="docutils literal notranslate"><span class="pre">pfts1d_ixy</span></code>, and <code class="docutils literal notranslate"><span class="pre">pfts1d_jxy</span></code>, to get the mapping of the fields to the global 2D array. <code class="docutils literal notranslate"><span class="pre">pfts1d_itype_veg</span></code> gives you the PFT number for each PFT. Most likely you’ll want to do this analysis in a data processing tool (such as NCL, Matlab, Mathmatica, IDL, etc. that is able to read and process NetCDF data files).</p>
 </div>
 </div>
 </div>

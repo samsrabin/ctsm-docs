@@ -131,9 +131,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../running-single-points/index.html">1.6. Running Single Point Regional Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../running-PTCLM/index.html">1.7. Running PTCLM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.8. Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.9. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.7. Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.8. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using-mesh-maker/index.html">1.9. Using mesh_maker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_note/index.html">2. CLM Technical Note</a></li>
@@ -207,7 +207,7 @@
             
   <div class="section" id="running-with-historical-co2-forcing">
 <span id="id1"></span><h1><span class="section-number">1.5.11. </span>Running with historical CO2 forcing<a class="headerlink" href="#running-with-historical-co2-forcing" title="Permalink to this headline">¶</a></h1>
-<p>In this case you want to run a simulation with stand-alone CLM responding to changes in CO2 for a historical period. For this example, we will start with the “I_1850-2000_CN” compset that has transient: land-use, Nitrogen and Aerosol deposition already. You could also use another compset if you didn’t want these other features to be transient. In order to get CO2 to be transient we need to add a new streams file and add it to the list of streams in the user_nl_datm file. You also need a NetCDF datafile that datm can read that gives the variation. You could supply your own file, but we have a standard file that is used by CAM for this and our example will make use of this file.</p>
+<p>In this case you want to run a simulation with stand-alone CLM responding to changes in CO2 for a historical period. For this example, we will start with the <code class="docutils literal notranslate"><span class="pre">I_1850-2000_CN</span></code> compset that has transient land-use, Nitrogen and Aerosol deposition already. You could also use another compset if you didn’t want these other features to be transient. In order to get CO2 to be transient we need to add a new streams file and add it to the list of streams in the <code class="docutils literal notranslate"><span class="pre">user_nl_datm</span></code> file. You also need a NetCDF datafile that datm can read that gives the variation. You could supply your own file, but we have a standard file that is used by CAM for this and our example will make use of this file.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Most everything here has to do with changing datm rather than CLM to allow this to happen. As such the user that wishes to do this should first become more familiar with datm and read the <a class="reference external" href="https://esmci.github.io/cime/versions/cesm2.2/html/data_models/index.html">CESM Data Model User’s Guide</a> especially as it pertains to the datm.</p>

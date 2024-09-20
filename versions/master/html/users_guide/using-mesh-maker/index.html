@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>1.7. Running PTCLM &mdash; ctsm CTSM master documentation</title>
+  <title>1.9. Using mesh_maker &mdash; ctsm CTSM master documentation</title>
   
 
   
@@ -39,8 +39,8 @@
         <link rel="search" title="Search" href="../../search.html"/>
     <link rel="top" title="ctsm CTSM master documentation" href="../../index.html"/>
         <link rel="up" title="1. CTSM1 User’s Guide" href="../index.html"/>
-        <link rel="next" title="1.7.1. What is PTCLMmkdata?" href="introduction-to-ptclm.html"/>
-        <link rel="prev" title="1.6.3. Running Single Point Configurations" href="../running-single-points/running-single-point-configurations.html"/> 
+        <link rel="next" title="1.9.1. Creating an ESMF mesh file from a netCDF file" href="how-to-make-mesh.html"/>
+        <link rel="prev" title="1.8.1. Testing" href="../testing/testing.html"/> 
 
   
   <script src="../../_static/js/modernizr.min.js"></script>
@@ -114,16 +114,12 @@
 <li class="toctree-l2"><a class="reference internal" href="../adding-new-resolutions/index.html">1.4. Adding New Resolutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-special-cases/index.html">1.5. Running Special Cases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-single-points/index.html">1.6. Running Single Point Regional Cases</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">1.7. Running PTCLM</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="introduction-to-ptclm.html">1.7.1. What is PTCLMmkdata?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="introduction-to-ptclm.html#details-of-ptclmmkdata">1.7.2. Details of PTCLMmkdata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="using-ptclm.html">1.7.3. Using PTCLMmkdata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ptclm-examples.html">1.7.4. Examples of using PTCLMmkdata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="adding-ptclm-site-data.html">1.7.5. Adding PTCLMmkdata Site Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.7. Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.8. Testing</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">1.9. Using mesh_maker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="how-to-make-mesh.html">1.9.1. Creating an ESMF mesh file from a netCDF file</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.8. Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.9. Testing</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_note/index.html">2. CLM Technical Note</a></li>
@@ -174,13 +170,13 @@
         
           <li><a href="../index.html"><span class="section-number">1. </span>CTSM1 User’s Guide</a> &raquo;</li>
         
-      <li><span class="section-number">1.7. </span>Running PTCLM</li>
+      <li><span class="section-number">1.9. </span>Using mesh_maker</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="../../_sources/users_guide/running-PTCLM/index.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../../_sources/users_guide/using-mesh-maker/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -193,29 +189,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="running-ptclm">
-<span id="id1"></span><h1><span class="section-number">1.7. </span>Running PTCLM<a class="headerlink" href="#running-ptclm" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="using-mesh-maker">
+<span id="using-mesh-maker-index"></span><h1><span class="section-number">1.9. </span>Using mesh_maker<a class="headerlink" href="#using-mesh-maker" title="Permalink to this headline">¶</a></h1>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="introduction-to-ptclm.html">1.7.1. What is PTCLMmkdata?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="introduction-to-ptclm.html#details-of-ptclmmkdata">1.7.2. Details of PTCLMmkdata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="introduction-to-ptclm.html#example-6-1-example-of-running-ptclmmkdata-for-us-umb-on-cheyenne">1.7.2.1. Example 6-1. Example of running PTCLMmkdata for US-UMB on cheyenne</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="using-ptclm.html">1.7.3. Using PTCLMmkdata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="using-ptclm.html#steps-in-running-ptclmmkdata">1.7.3.1. Steps in running PTCLMmkdata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="using-ptclm.html#ptclmmkdata-options">1.7.3.2. PTCLMmkdata options</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="ptclm-examples.html">1.7.4. Examples of using PTCLMmkdata</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="ptclm-examples.html#example-running-ptclmmkdata-without-tower-years">1.7.4.1. Example: Running PTCLMmkdata without tower years</a></li>
-<li class="toctree-l2"><a class="reference internal" href="ptclm-examples.html#example-running-ptclmmkdata-with-global-pft-and-soil-types-dataset">1.7.4.2. Example: Running PTCLMmkdata with global PFT and soil types dataset</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="adding-ptclm-site-data.html">1.7.5. Adding PTCLMmkdata Site Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="adding-ptclm-site-data.html#dynamic-land-use-change-files-for-use-by-ptclmmkdata">1.7.5.1. Dynamic Land-Use Change Files for use by PTCLMmkdata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-ptclm-site-data.html#converting-ameriflux-data-for-use-by-ptclmmkdata">1.7.5.2. Converting AmeriFlux Data for use by PTCLMmkdata</a></li>
-<li class="toctree-l2"><a class="reference internal" href="adding-ptclm-site-data.html#example-ptclmmkdata-transient-example-over-a-shorter-time-period">1.7.5.3. Example: PTCLMmkdata transient example over a shorter time period</a></li>
+<li class="toctree-l1"><a class="reference internal" href="how-to-make-mesh.html">1.9.1. Creating an ESMF mesh file from a netCDF file</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="how-to-make-mesh.html#example-making-and-visualizing-a-mesh-file">1.9.1.1. Example: Making and visualizing a mesh file</a></li>
 </ul>
 </li>
 </ul>
@@ -232,10 +211,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="introduction-to-ptclm.html" class="btn btn-neutral float-right" title="1.7.1. What is PTCLMmkdata?" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="how-to-make-mesh.html" class="btn btn-neutral float-right" title="1.9.1. Creating an ESMF mesh file from a netCDF file" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="../running-single-points/running-single-point-configurations.html" class="btn btn-neutral" title="1.6.3. Running Single Point Configurations" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="../testing/testing.html" class="btn btn-neutral" title="1.8.1. Testing" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

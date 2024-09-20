@@ -124,9 +124,9 @@
 <li class="toctree-l2"><a class="reference internal" href="../adding-new-resolutions/index.html">1.4. Adding New Resolutions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-special-cases/index.html">1.5. Running Special Cases</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../running-single-points/index.html">1.6. Running Single Point Regional Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../running-PTCLM/index.html">1.7. Running PTCLM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.8. Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.9. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.7. Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.8. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using-mesh-maker/index.html">1.9. Using mesh_maker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_note/index.html">2. CLM Technical Note</a></li>
@@ -200,15 +200,15 @@
             
   <div class="section" id="building-the-clm-tools">
 <h1><span class="section-number">1.3.2. </span>Building the CLM tools<a class="headerlink" href="#building-the-clm-tools" title="Permalink to this headline">¶</a></h1>
-<p>The CLM FORTRAN tools all have similar makefiles, and similar options for building. The tools <strong>cprnc</strong> and <strong>gen_domain</strong> use the CIME configure/build system which is described in the next section.</p>
-<p>The Makefiles (for <strong>mksurfdata_esmf</strong> and <strong>mkprocdata_map</strong>) use GNU Make extensions and thus require that you use GNU make to use them. They also auto detect the type of platform you are on, using “uname -s” and set the compiler, compiler flags and such accordingly. There are also environment variables that can be set to set things that must be customized. All the tools use NetCDF and hence require the path to the NetCDF libraries and include files. On some platforms (such as Linux) multiple compilers can be used, and hence there are env variables that can be set to change the FORTRAN and/or “C” compilers used. The tools also allow finer control, by also allowing the user to add compiler flags they choose, for both FORTRAN and “C”, as well as picking the compiler, linker and and add linker options. Finally the tools allow you to turn optimization on (which is off by default but on for <strong>mksurfdata_esmf</strong>) with the OPT flag so that the tool will run faster.</p>
-<p>Options used by all:  <strong>mksurfdata_esmf</strong></p>
+<p>The CLM FORTRAN tools all have similar makefiles, and similar options for building. The tools <code class="docutils literal notranslate"><span class="pre">cprnc</span></code> and <code class="docutils literal notranslate"><span class="pre">gen_domain</span></code> use the CIME configure/build system which is described in the next section.</p>
+<p>The Makefiles (for <code class="docutils literal notranslate"><span class="pre">mksurfdata_esmf</span></code> and <code class="docutils literal notranslate"><span class="pre">mkprocdata_map</span></code>) use GNU Make extensions and thus require that you use GNU make to use them. They also auto detect the type of platform you are on, using “uname -s” and set the compiler, compiler flags and such accordingly. There are also environment variables that can be set to set things that must be customized. All the tools use NetCDF and hence require the path to the NetCDF libraries and include files. On some platforms (such as Linux) multiple compilers can be used, and hence there are env variables that can be set to change the FORTRAN and/or “C” compilers used. The tools also allow finer control, by also allowing the user to add compiler flags they choose, for both FORTRAN and “C”, as well as picking the compiler, linker and and add linker options. Finally the tools allow you to turn optimization on (which is off by default but on for <code class="docutils literal notranslate"><span class="pre">mksurfdata_esmf</span></code>) with the OPT flag so that the tool will run faster.</p>
+<p>Options used by all:  <code class="docutils literal notranslate"><span class="pre">mksurfdata_esmf</span></code></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">LIB_NETCDF</span></code> – sets the location of the NetCDF library.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">INC_NETCDF</span></code> – sets the location of the NetCDF include files.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">USER_FC</span></code> – sets the name of the FORTRAN compiler.</p></li>
 </ul>
-<p>Options used by: <strong>mkprocdata_map</strong>, and <strong>mksurfdata_esmf</strong></p>
+<p>Options used by: <code class="docutils literal notranslate"><span class="pre">mkprocdata_map</span></code>, and <code class="docutils literal notranslate"><span class="pre">mksurfdata_esmf</span></code></p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">MOD_NETCDF</span></code> – sets the location of the NetCDF FORTRAN module.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">USER_LINKER</span></code> – sets the name of the linker to use.</p></li>
@@ -231,7 +231,7 @@
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">INC_NETCDF</span></code></dt><dd><p>This variable sets the path to the NetCDF include directory (in order to find the include file <code class="docutils literal notranslate"><span class="pre">netcdf.inc</span></code>). if not set it defaults to <code class="docutils literal notranslate"><span class="pre">/usr/local/include</span></code>.</p>
 </dd>
-<dt><code class="docutils literal notranslate"><span class="pre">MOD_NETCDF</span></code></dt><dd><p>This variable sets the path to the NetCDF module directory (in order to find the NetCDF FORTRAN-90 module file when NetCDF is used with a FORTRAN-90 <strong>use statement</strong>. When not set it defaults to the <code class="docutils literal notranslate"><span class="pre">LIB_NETCDF</span></code> value.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">MOD_NETCDF</span></code></dt><dd><p>This variable sets the path to the NetCDF module directory (in order to find the NetCDF FORTRAN-90 module file when NetCDF is used with a FORTRAN-90 <code class="docutils literal notranslate"><span class="pre">use</span> <span class="pre">statement</span></code>. When not set it defaults to the <code class="docutils literal notranslate"><span class="pre">LIB_NETCDF</span></code> value.</p>
 </dd>
 <dt><code class="docutils literal notranslate"><span class="pre">USER_FC</span></code></dt><dd><p>This variable sets the command name to the FORTRAN-90 compiler to use when compiling the tool. The default compiler to use depends on the platform. And for example, on the AIX platform this variable is NOT used</p>
 </dd>
@@ -255,7 +255,7 @@
 <p>Note, that depending on the compiler answers may be different when SMP is activated.</p>
 </div>
 <dl class="simple">
-<dt><code class="docutils literal notranslate"><span class="pre">OPT</span></code></dt><dd><p>This variable flags if compiler optimization should be used when compiling the tool. It can be set to either <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> or <code class="docutils literal notranslate"><span class="pre">FALSE</span></code>, by default it is set to for both <strong>mksurfdata_esmf</strong> and <strong>mkprocdata_map</strong>. Turning this on should make the tool run much faster.</p>
+<dt><code class="docutils literal notranslate"><span class="pre">OPT</span></code></dt><dd><p>This variable flags if compiler optimization should be used when compiling the tool. It can be set to either <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> or <code class="docutils literal notranslate"><span class="pre">FALSE</span></code>, by default it is set to for both <code class="docutils literal notranslate"><span class="pre">mksurfdata_esmf</span></code> and <code class="docutils literal notranslate"><span class="pre">mkprocdata_map</span></code>. Turning this on should make the tool run much faster.</p>
 </dd>
 </dl>
 <div class="admonition warning">
@@ -278,7 +278,7 @@
 <p class="admonition-title">Note</p>
 <p>There are several files that are copies of the original files. By having copies the tools can all be made stand-alone, but any changes to the originals will have to be put into the tool directories as well.</p>
 </div>
-<p>The <em>README.filecopies</em> (which can be found in <code class="docutils literal notranslate"><span class="pre">$CTSMROOT/tools</span></code>) is repeated here.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">README.filecopies</span></code> (which can be found in <code class="docutils literal notranslate"><span class="pre">$CTSMROOT/tools</span></code>) is repeated here.</p>
 <pre class="literal-block">tools/README.filecopies                       May/26/2011
 
 There are several files that are copies of the original files from
@@ -314,8 +314,8 @@ II. Files with differences
 </div>
 <div class="section" id="building-the-clm-tools-that-use-the-cime-configure-build-system">
 <h1><span class="section-number">1.3.3. </span>Building the CLM tools that use the CIME configure/build system<a class="headerlink" href="#building-the-clm-tools-that-use-the-cime-configure-build-system" title="Permalink to this headline">¶</a></h1>
-<p><strong>cprnc</strong> and <em>gen_domain*</em> both use the CIME configure/build system rather than the CLM specific version described above.</p>
-<p>See <a class="reference external" href="http://esmci.github.io/cime/users_guide/grids.html?highlight=gen_domain#adding-grids">CIME documentation on adding grids</a> for more information on adding grids, creating mapping files, and running <strong>gen_domain</strong>. Also see the CIME file: <code class="docutils literal notranslate"><span class="pre">$CTSMROOT/tools/mapping/gen_domain_files/INSTALL</span></code> for how to build <strong>gen_domain</strong>.</p>
+<p><code class="docutils literal notranslate"><span class="pre">cprnc</span></code> and <code class="docutils literal notranslate"><span class="pre">gen_domain</span></code> both use the CIME configure/build system rather than the CLM specific version described above.</p>
+<p>See <a class="reference external" href="http://esmci.github.io/cime/users_guide/grids.html?highlight=gen_domain#adding-grids">CIME documentation on adding grids</a> for more information on adding grids, creating mapping files, and running <code class="docutils literal notranslate"><span class="pre">gen_domain</span></code>. Also see the CIME file: <code class="docutils literal notranslate"><span class="pre">$CTSMROOT/tools/mapping/gen_domain_files/INSTALL</span></code> for how to build <code class="docutils literal notranslate"><span class="pre">gen_domain</span></code>.</p>
 </div>
 
 

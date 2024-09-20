@@ -229,8 +229,8 @@ stream_fldFileName_swindow_end = &#39;/glade/p/cesmdata/cseg/inputdata/lnd/clm2/
 stream_meshfile_cropcal = &#39;/glade/p/cesmdata/cseg/inputdata/share/meshes/360x720_120830_ESMFmesh_c20210507_cdf5.nc&#39;
 
 ! First and last years on the sowing window datasets
-stream_year_first_cropcal = 2000
-stream_year_last_cropcal = 2000
+stream_year_first_cropcal_swindows = 2000
+stream_year_last_cropcal_swindows = 2000
 </pre></div>
 </div>
 </div>
@@ -244,7 +244,7 @@ stream_year_last_cropcal = 2000
 </div>
 <div class="section" id="maturity-requirements">
 <h2><span class="section-number">1.5.4.3. </span>Maturity requirements<a class="headerlink" href="#maturity-requirements" title="Permalink to this headline">¶</a></h2>
-<p>The heat unit accumulation required for a crop to reach maturity (and thus be harvested) is typically determined by a formula with crop-specific parameters that are specified on the parameter file. However, geographically- and temporally-varying maps of maturity requirement (in units of degree-days) can also be specified using the <code class="docutils literal notranslate"><span class="pre">user_nl_clm</span></code> input variable <code class="docutils literal notranslate"><span class="pre">stream_fldFileName_cultivar_gdds</span></code>. (Note that <code class="docutils literal notranslate"><span class="pre">stream_meshfile_cropcal</span></code>, <code class="docutils literal notranslate"><span class="pre">stream_year_first_cropcal</span></code>, and <code class="docutils literal notranslate"><span class="pre">stream_year_last_cropcal</span></code>—see above—are all also required.)</p>
+<p>The heat unit accumulation required for a crop to reach maturity (and thus be harvested) is typically determined by a formula with crop-specific parameters that are specified on the parameter file. However, geographically- and temporally-varying maps of maturity requirement (in units of degree-days) can also be specified using the <code class="docutils literal notranslate"><span class="pre">user_nl_clm</span></code> input variable <code class="docutils literal notranslate"><span class="pre">stream_fldFileName_cultivar_gdds</span></code>. (Note that <code class="docutils literal notranslate"><span class="pre">stream_meshfile_cropcal</span></code>, <code class="docutils literal notranslate"><span class="pre">stream_year_first_cropcal_cultivar_gdds</span></code>, and <code class="docutils literal notranslate"><span class="pre">stream_year_last_cropcal_cultivar_gdds</span></code>—see above—are all also required.)</p>
 </div>
 <div class="section" id="generating-maturity-requirements">
 <h2><span class="section-number">1.5.4.4. </span>Generating maturity requirements<a class="headerlink" href="#generating-maturity-requirements" title="Permalink to this headline">¶</a></h2>
@@ -254,8 +254,8 @@ stream_year_last_cropcal = 2000
 stream_fldFileName_swindow_start = &#39;/path/to/sowing_date_file.nc&#39;
 stream_fldFileName_swindow_end = &#39;/path/to/sowing_date_file.nc&#39;
 stream_meshfile_cropcal = &#39;/path/to/mesh_file.nc&#39;
-stream_year_first_cropcal = YEAR
-stream_year_last_cropcal = YEAR
+stream_year_first_cropcal_swindows = YEAR
+stream_year_last_cropcal_swindows = YEAR
 
 ! Special settings for &quot;GDD-generating&quot; run
 generate_crop_gdds = .true.

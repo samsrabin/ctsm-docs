@@ -232,7 +232,7 @@
 <div class="section" id="example-use-global-forcings-at-a-site-without-its-own-special-forcings">
 <h3><span class="section-number">1.6.3.1.1. </span>Example: Use global forcings at a site without its own special forcings<a class="headerlink" href="#example-use-global-forcings-at-a-site-without-its-own-special-forcings" title="Permalink to this headline">¶</a></h3>
 <p>This example uses the single-point site in Brazil.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 &gt; set SITE=1x1_brazil
 &gt; ./create_newcase -case testSPDATASET -res $SITE -compset I2000Clm50SpGs
 &gt; cd testSPDATASET
@@ -243,7 +243,7 @@
 <div class="section" id="example-use-global-forcings-at-a-site-with-its-own-special-forcings">
 <h3><span class="section-number">1.6.3.1.2. </span>Example: Use global forcings at a site WITH its own special forcings<a class="headerlink" href="#example-use-global-forcings-at-a-site-with-its-own-special-forcings" title="Permalink to this headline">¶</a></h3>
 <p>The urban Mexico City test site has its own atmosphere forcing data (see Sect. <a class="reference internal" href="#single-point-with-own-forcing"><span class="std std-numref">1.6.3.2</span></a>). To ignore that and run it with the default global forcing data, but over the period for which its own forcing data is provided, do the following:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 # Set a variable to the site you want to use (as it&#39;s used several times below)
 &gt; set SITE=1x1_mexicocityMEX
 &gt; ./create_newcase -case testSPDATASET -res $SITE -compset I1PtClm50SpGs
@@ -256,11 +256,15 @@
 <div class="section" id="supported-single-point-runs-for-sites-with-their-own-atmospheric-forcing">
 <span id="single-point-with-own-forcing"></span><h2><span class="section-number">1.6.3.2. </span>Supported single-point runs for sites with their own atmospheric forcing<a class="headerlink" href="#supported-single-point-runs-for-sites-with-their-own-atmospheric-forcing" title="Permalink to this headline">¶</a></h2>
 <p>Of the supported single-point datasets we have three that also have atmospheric forcing data that go with them: Mexico City (Mexico), Vancouver, (Canada, British Columbia), and <code class="docutils literal notranslate"><span class="pre">urbanc_alpha</span></code> (test data for an Urban inter-comparison project). Mexico city and Vancouver also have namelist options in the source code for them to work with modified urban data parameters that are particular to these locations. To turn on the atmospheric forcing for these datasets, you set the <code class="docutils literal notranslate"><span class="pre">env_run.xml</span> <span class="pre">DATM_MODE</span></code> variable to <code class="docutils literal notranslate"><span class="pre">CLM1PT</span></code>, and then the atmospheric forcing datasets will be used for the point picked. If you use one of the compsets that has “I1Pt” in the name that will be set automatically.</p>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Update the below, as <code class="docutils literal notranslate"><span class="pre">queryDefaultNamelist.pl</span></code> no longer exists.</p>
+</div>
 <p>When running with datasets that have their own atmospheric forcing you need to be careful to run over the period that data is available. If you have at least one year of forcing it will cycle over the available data over and over again no matter how long of a simulation you run. However, if you have less than a years worth of data (or if the start date doesn’t start at the beginning of the year, or the end date doesn’t end at the end of the year) then you won’t be able to run over anything but the data extent. In this case you will need to carefully set the <code class="docutils literal notranslate"><span class="pre">RUN_STARTDATE</span></code>, <code class="docutils literal notranslate"><span class="pre">START_TOD</span></code> and <code class="docutils literal notranslate"><span class="pre">STOP_N/STOP_OPTION</span></code> variables for your case to run over the entire time extent of your data. For the supported data points, these values are in the XML database and you can use the <code class="docutils literal notranslate"><span class="pre">queryDefaultNamelist.pl</span></code> script to query the values and set them for your case (they are set for the three urban test cases: Mexicocity, Vancouver, and urbanc_alpha).</p>
 <div class="section" id="example-use-site-specific-atmospheric-forcings">
 <h3><span class="section-number">1.6.3.2.1. </span>Example: Use site-specific atmospheric forcings<a class="headerlink" href="#example-use-site-specific-atmospheric-forcings" title="Permalink to this headline">¶</a></h3>
 <p>In this example, we show how to use the atmospheric forcings specific to the Vancouver, Canada point.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 
 # Set a variable to the site you want to use (as it&#39;s used several times below)
 &gt; set SITE=1x1_vancouverCAN
@@ -299,7 +303,7 @@ EOF
 <p>The following provides an example of setting up a case using <code class="docutils literal notranslate"><span class="pre">CLM_USRDAT_NAME</span></code> where you rename the files according to the <code class="docutils literal notranslate"><span class="pre">CLM_USRDAT_NAME</span></code> convention. We have an example of such datafiles in the repository for a specific region over Alaska (actually just a sub-set of the global f19 grid).</p>
 <div class="section" id="example-using-clm-usrdat-name-to-run-a-simulation-using-user-datasets-for-a-specific-region-over-alaska">
 <h3><span class="section-number">1.6.3.3.1. </span>Example: Using CLM_USRDAT_NAME to run a simulation using user datasets for a specific region over Alaska<a class="headerlink" href="#example-using-clm-usrdat-name-to-run-a-simulation-using-user-datasets-for-a-specific-region-over-alaska" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 &gt; ./create_newcase -case my_userdataset_test -res CLM_USRDAT -compset I2000Clm50BgcCruGs
 &gt; cd my_userdataset_test/
 &gt; set GRIDNAME=13x12pt_f19_alaskaUSA
@@ -321,6 +325,10 @@ EOF
 </div>
 <div class="section" id="example-creating-a-surface-dataset-for-a-single-point">
 <h3><span class="section-number">1.6.3.3.2. </span>Example: Creating a surface dataset for a single point<a class="headerlink" href="#example-creating-a-surface-dataset-for-a-single-point" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>Update the below, as <code class="docutils literal notranslate"><span class="pre">mksurfdata.pl</span></code> no longer exists and domain files aren’t needed with nuopc.</p>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># set the GRIDNAME and creation date that will be used later
 &gt; setenv GRIDNAME 1x1_boulderCO
 &gt; setenv CDATE    `date +%y%m%d`
@@ -354,6 +362,14 @@ EOF
 </div>
 <div class="section" id="example-setting-up-a-case-from-the-single-point-surface-dataset-just-created">
 <h3><span class="section-number">1.6.3.3.3. </span>Example: Setting up a case from the single-point surface dataset just created<a class="headerlink" href="#example-setting-up-a-case-from-the-single-point-surface-dataset-just-created" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-todo admonition" id="id3">
+<p class="admonition-title">Todo</p>
+<p>Change this to provide instructions for a CTSM checkout instead of a CESM one.</p>
+</div>
+<div class="admonition-todo admonition" id="id4">
+<p class="admonition-title">Todo</p>
+<p>Update the below, as domain files aren’t needed with nuopc.</p>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># First setup an environment variable that points to the top of the CESM directory.
 &gt; setenv CESMROOT &lt;directory-of-path-to-main-cesm-directory&gt;
 # Next make sure you have a inputdata location that you can write to
@@ -364,7 +380,7 @@ EOF
 # naming convention (leave off the creation date)
 &gt; cp $CESMROOT/$CTSMROOT/tools/mksurfdata_esmf/surfdata_${GRIDNAME}_simyr1850_$CDATE.nc \
 $MYCSMDATA/lnd/clm2/surfdata_map/surfdata_${GRIDNAME}_simyr1850.nc
-&gt; cd $CESMROOT/scripts
+&gt; cd $CESMROOT/cime/scripts
 &gt; ./create_newcase -case my_usernldatasets_test -res CLM_USRDAT -compset I1850Clm50BgcCropCru \
 -mach cheyenne_intel
 &gt; cd my_usernldatasets_test

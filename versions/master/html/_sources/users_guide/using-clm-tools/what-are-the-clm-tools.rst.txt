@@ -6,6 +6,9 @@
  What are the CLM tools
 ========================
 
+.. todo::
+    Remove references to mkprocdata_map?
+
 There are several tools provided with CLM that allow you to create your own input datasets at resolutions you choose, or to interpolate initial conditions to a different resolution, or used to compare CLM history files between different cases. The tools are all available in the ``$CTSMROOT/tools`` directory. Most of the tools are FORTRAN stand-alone programs in their own directory, but there is also a suite of NCL scripts in the ``$CTSMROOT/tools//ncl_scripts`` directory, and some of the tools are scripts that may also call the ESMF regridding program. Some of the NCL scripts are very specialized and not meant for general use, and we won't document them here. They still contain documentation in the script itself and the README file in the tools directory.
 
 The tools produce files that can be used for CLM4.5 and |version|. They do **NOT** produce files that can be used for CLM4.0. If you need files for CLM4.0, you'll need to use a previous version of CLM.
@@ -19,6 +22,9 @@ The list of generally important scripts and programs are as follows.
 #. ``mksurfdata_esmf`` to create surface datasets from grid datasets (clm4_0 and |version| versions).
 
 #. ``./mkprocdata_map`` to interpolate output unstructured grids (such as the CAM HOMME dy-core "ne" grids like ne30np4) into a 2D regular lat/long grid format that can be plotted easily. Can be used by either clm4_0 or |version|.
+
+.. todo::
+    Update the below, as domain files aren't needed with nuopc.
 
 #. ``$CIMEROOT/tools/mapping/gen_domain_files/gen_domain`` to create a domain file for datm from a mapping file. The domain file is then used by BOTH datm AND CLM to define the grid and land-mask.
 
@@ -39,16 +45,17 @@ Running FORTRAN tools with namelists
 
    ./program < namelist
 
-There is a sample namelist called ``$CTSMROOT/tools/mksurfdata_esmf/gen_mksurfdata_namelist.xml`` that shows you what the namelist should look like. ``mksurfdata_esmf`` also has a script that creates the namelist and runs the program for you. Namelists that you create should be similar to the example namelist. The namelist values are also documented along with the other namelists in the:
-::
-
-   $CTSMROOT/bld/namelist_files/namelist_definition.xml`` file
-        and default values in the:
-   $CTSMROOT/bld/namelist_files/namelist_defaults_clm_tools.xml`` file.
+There is a sample namelist called ``$CTSMROOT/tools/mksurfdata_esmf/gen_mksurfdata_namelist.xml`` that shows you what the namelist should look like. ``mksurfdata_esmf`` also has a script that creates the namelist and runs the program for you. Namelists that you create should be similar to the example namelist. The namelist values are also documented along with the other namelists in the ``$CTSMROOT/bld/namelist_files/namelist_definition_ctsm.xml`` file, with default values in the ``$CTSMROOT/bld/namelist_files/namelist_defaults_ctsm.xml`` file.
 
 -----------------------------------------------
 Running FORTRAN tools with command line options
 -----------------------------------------------
+
+.. todo::
+    Remove reference to mkprocdata_map?
+
+.. todo::
+    Update the below, as domain files aren't needed with nuopc.
 
 ``gen_domain``, ``mkprocdata_map``, and ``cprnc`` run with command line arguments. The detailed sections below will give you more information on the command line arguments specific to each tool. Also running the tool without any arguments will give you a general synopsis on how to run the tool.
 

@@ -212,7 +212,7 @@
 <p>The first thing we need to do is to run a fully coupled case and save the atmospheric coupling fields on a three hourly basis. In this example, we will run on cheyenne and archive the data to a local disk that we can then use in the next simulation.</p>
 <div class="section" id="example-fully-coupled-simulation-to-create-data-to-force-next-example-simulation">
 <h2><span class="section-number">1.5.10.1. </span>Example: Fully Coupled Simulation to Create Data to Force Next Example Simulation<a class="headerlink" href="#example-fully-coupled-simulation-to-create-data-to-force-next-example-simulation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 &gt; ./create_newcase -case myB1850 -res f09_g17_gl4 -compset B1850
 &gt; cd myB1850
 &gt; ./case.setup
@@ -239,7 +239,7 @@ echo &quot;histaux_a2x3hr=.true.&quot; &gt;&gt; user_nl_cpl
 </div>
 <div class="section" id="example-simulation-forced-with-data-from-the-previous-simulation">
 <span id="eg-sim-data-from-prev-sim"></span><h2><span class="section-number">1.5.10.2. </span>Example: Simulation Forced with Data from the Previous Simulation<a class="headerlink" href="#example-simulation-forced-with-data-from-the-previous-simulation" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 &gt; ./create_newcase -case frcwmyB1850 -res f09_g17_gl4 -compset I1850Clm50BgcSpinup
 &gt; cd frcWmyB1850
 # The following sets the casename to point to for atm forcing (you could also use an editor)

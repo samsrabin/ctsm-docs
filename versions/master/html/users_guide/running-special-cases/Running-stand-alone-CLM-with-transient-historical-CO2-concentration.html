@@ -207,7 +207,11 @@
             
   <div class="section" id="running-with-historical-co2-forcing">
 <span id="id1"></span><h1><span class="section-number">1.5.11. </span>Running with historical CO2 forcing<a class="headerlink" href="#running-with-historical-co2-forcing" title="Permalink to this headline">¶</a></h1>
-<p>In this case you want to run a simulation with stand-alone CLM responding to changes in CO2 for a historical period. For this example, we will start with the <code class="docutils literal notranslate"><span class="pre">I_1850-2000_CN</span></code> compset that has transient land-use, Nitrogen and Aerosol deposition already. You could also use another compset if you didn’t want these other features to be transient. In order to get CO2 to be transient we need to add a new streams file and add it to the list of streams in the <code class="docutils literal notranslate"><span class="pre">user_nl_datm</span></code> file. You also need a NetCDF datafile that datm can read that gives the variation. You could supply your own file, but we have a standard file that is used by CAM for this and our example will make use of this file.</p>
+<p>In this case you want to run a simulation with stand-alone CLM responding to changes in CO2 for a historical period. For this example, we will start with the <code class="docutils literal notranslate"><span class="pre">IHistClm50BgcCrop</span></code> compset that has transient land-use, Nitrogen and Aerosol deposition already. You could also use another compset if you didn’t want these other features to be transient. In order to get CO2 to be transient we need to add a new streams file and add it to the list of streams in the <code class="docutils literal notranslate"><span class="pre">user_nl_datm</span></code> file. You also need a NetCDF datafile that datm can read that gives the variation. You could supply your own file, but we have a standard file that is used by CAM for this and our example will make use of this file.</p>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p><code class="docutils literal notranslate"><span class="pre">user_nl_datm</span></code> or <code class="docutils literal notranslate"><span class="pre">user_nl_datm_streams</span></code>?</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Most everything here has to do with changing datm rather than CLM to allow this to happen. As such the user that wishes to do this should first become more familiar with datm and read the <a class="reference external" href="https://esmci.github.io/cime/versions/cesm2.2/html/data_models/index.html">CESM Data Model User’s Guide</a> especially as it pertains to the datm.</p>
@@ -221,7 +225,7 @@
 <p>First we are going to create a case, and we will edit the <code class="docutils literal notranslate"><span class="pre">user_nl_datm</span></code> so that we add a CO2 data stream in. There is a streams text file available in <code class="docutils literal notranslate"><span class="pre">$CTSMROOT/doc/UsersGuide/co2_streams.txt</span></code>, that includes file with a CO2 time-series from 1765 to 2007.</p>
 <div class="section" id="example-transient-simulation-with-historical-co2">
 <h2><span class="section-number">1.5.11.1. </span>Example: Transient Simulation with Historical CO2<a class="headerlink" href="#example-transient-simulation-with-historical-co2" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">scripts</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">cime</span><span class="o">/</span><span class="n">scripts</span>
 <span class="o">&gt;</span> <span class="o">./</span><span class="n">create_newcase</span> <span class="o">-</span><span class="n">case</span> <span class="n">DATM_CO2_TSERIES</span> <span class="o">-</span><span class="n">res</span> <span class="n">f19_g17_gl4</span> <span class="o">-</span><span class="n">compset</span> <span class="n">IHistClm50BgcCrop</span>
 <span class="o">&gt;</span> <span class="n">cd</span> <span class="n">DATM_CO2_TSERIES</span>
 

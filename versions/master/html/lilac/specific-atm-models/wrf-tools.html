@@ -237,11 +237,23 @@ ncl mkunitymap.ncl
 </pre></div>
 </div>
 </li>
+</ol>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Update the below, as domain files aren’t needed with nuopc.</p>
+</div>
+<ol class="arabic" start="5">
 <li><p>Generate CTSM domain files using <code class="docutils literal notranslate"><span class="pre">get_domain</span></code> tool:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./gen_domain -m /glade/work/<span class="nv">$USER</span>/ctsm/nldas_grid/scrip/wrf2clm_mapping_noneg.nc -o wrf2clm_ocn_noneg -l wrf2clm_lnd_noneg
 </pre></div>
 </div>
 </li>
+</ol>
+<div class="admonition-todo admonition" id="id2">
+<p class="admonition-title">Todo</p>
+<p>Update the below, as <code class="docutils literal notranslate"><span class="pre">mksurfdata.pl</span></code> no longer exists.</p>
+</div>
+<ol class="arabic" start="6">
 <li><p>Create surface datasets in <code class="docutils literal notranslate"><span class="pre">tools/mksurfdata_esmf</span></code>:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./mksurfdata.pl -res usrspec -usr_gname <span class="s2">&quot;nldas&quot;</span> -usr_gdate <span class="s2">&quot;190124&quot;</span> -usr_mapdir <span class="s2">&quot;/glade/work/</span><span class="nv">$USER</span><span class="s2">/ctsm/nldas_grid/map&quot;</span> -y <span class="m">2000</span> -exedir <span class="s2">&quot;/glade/u/home/</span><span class="nv">$USER</span><span class="s2">/src/ctsm/ctsm_surfdata/tools/mksurfdata_esmf&quot;</span> -no-crop
 </pre></div>
@@ -256,7 +268,7 @@ ncl mkunitymap.ncl
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ncl transfer_wrfinput_to_ctsm_with_snow.ncl <span class="s1">&#39;finidat=&quot;the_existing_finidat_file.nc&quot;&#39;</span> <span class="s1">&#39;wrfinput=&quot;your_wrfinput_file&quot;&#39;</span> <span class="s1">&#39;merged=&quot;the_merged_finidat_file.nc&quot;&#39;</span>
 </pre></div>
 </div>
-<div class="admonition-todo admonition" id="id1">
+<div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">Todo</p>
 <p>Sam, can you please make the above ncl script available.</p>
 </div>

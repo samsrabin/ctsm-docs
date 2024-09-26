@@ -120,21 +120,20 @@
 <li class="toctree-l3"><a class="reference internal" href="Running-with-tillage.html">1.5.5. Running with tillage</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Spinning-up-the-Satellite-Phenology-Model-CLMSP-spinup.html">1.5.6. Spinning up the Satellite Phenology Model</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">1.5.7. Spinup of CTSM1-BGC-Crop</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#example-ad-spinup-simulation-for-version-bgc">1.5.7.1. Example:: AD_SPINUP Simulation for CTSM1-BGC</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-ad-spinup-simulation-for-version-bgc">1.5.7.1. Example: AD_SPINUP Simulation for CTSM1-BGC</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#example-final-clmbgc-spinup-simulation-for-version-bgc">1.5.7.2. Example: Final CLMBGC Spinup Simulation for CTSM1-BGC</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="Running-with-excess-ground-ice.html">1.5.8. Running with excess ground ice</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Running-with-MOAR-data-as-atmospheric-forcing-to-spinup-the-model.html">1.5.9. Running with MOAR data</a></li>
 <li class="toctree-l3"><a class="reference internal" href="Running-with-your-own-previous-simulation-as-atmospheric-forcing-to-spinup-the-model.html">1.5.10. Running with atmospheric forcing from a previous simulation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Running-stand-alone-CLM-with-transient-historical-CO2-concentration.html">1.5.11. Running with historical CO2 forcing</a></li>
-<li class="toctree-l3"><a class="reference internal" href="Running-with-anomaly-forcing.html">1.5.12. Running with anomaly forcing</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Running-with-anomaly-forcing.html">1.5.11. Running with anomaly forcing</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../running-single-points/index.html">1.6. Running Single Point Regional Cases</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../running-PTCLM/index.html">1.7. Running PTCLM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.8. Troubleshooting</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.9. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../trouble-shooting/index.html">1.7. Troubleshooting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../testing/index.html">1.8. Testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../using-mesh-maker/index.html">1.9. Using mesh_maker</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../tech_note/index.html">2. CLM Technical Note</a></li>
@@ -208,12 +207,12 @@
             
   <div class="section" id="spinup-of-version-bgc-crop">
 <span id="spinning-up-clm-bgc"></span><h1><span class="section-number">1.5.7. </span>Spinup of CTSM1-BGC-Crop<a class="headerlink" href="#spinup-of-version-bgc-crop" title="Permalink to this headline">¶</a></h1>
-<p>To get the CTSM1-BGC model to a steady state, you first run it from arbitrary initial conditions using the “accelerated decomposition spinup” (-bgc_spinup on in CLM <strong>configure</strong>, see example below) mode for about 200 simulation years. <a class="reference internal" href="#figure-bgc-ad-spinup-plot-for-1850-gswp3"><span class="std std-numref">Figure 1.5.3</span></a> shows spinup behavior for an 1850 BGC accelerated decomposition (AD) case using GSWP3 atmospheric forcing. Generally, the criteria that less than 3% of the land surface be in total ecosystem carbon disequilibrium takes the longest to satisfy due to slow soil carbon (TOTSOMC) turnover times in the Arctic.</p>
+<p>To get the CTSM1-BGC model to a steady state, you first run it from arbitrary initial conditions using the “accelerated decomposition spinup” (<code class="docutils literal notranslate"><span class="pre">-bgc_spinup</span> <span class="pre">on</span></code> in CLM <code class="docutils literal notranslate"><span class="pre">configure</span></code>, see example below) mode for about 200 simulation years. <a class="reference internal" href="#figure-bgc-ad-spinup-plot-for-1850-gswp3"><span class="std std-numref">Figure 1.5.3</span></a> shows spinup behavior for an 1850 BGC accelerated decomposition (AD) case using GSWP3 atmospheric forcing. Generally, the criteria that less than 3% of the land surface be in total ecosystem carbon disequilibrium takes the longest to satisfy due to slow soil carbon (TOTSOMC) turnover times in the Arctic.</p>
 <div class="figure align-default" id="id1">
 <span id="figure-bgc-ad-spinup-plot-for-1850-gswp3"></span><img alt="../../_images/image32.png" src="../../_images/image32.png" />
 <p class="caption"><span class="caption-number">Figure 1.5.3 </span><span class="caption-text">BGC AD spinup plot for a year 1850 case with GSWP3 atmospheric forcing. Variables examined are TOTECOSYSC (total ecosystem carbon), TOTSOMC (total soil organic matter carbon), TOTVEGC (total vegetation carbon), TLAI (total leaf area index), GPP (gross primary production) and TWS (total water storage). Generated using …/tools/contrib/SpinupStability.ncl.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
 </div>
-<p>After this you branch from this mode in the “final spinup” (-bgc_spinup off in CLM <strong>configure</strong>, see example below), and run for several hundred simulation years. <a class="reference internal" href="#figure-bgc-pad-spinup-plot-for-1850-gswp3"><span class="std std-numref">Figure 1.5.4</span></a> shows spinup behavior for an 1850 BGC post accelerated decomposition (pAD) case using GSWP3 atmospheric forcing. As before, the criteria that less than 3% of the land surface be in total ecosystem carbon disequilibrium takes the longest to satisfy. It can be difficult to meet this strict criteria in less than 1000 years and users may want to relax this criteria depending on their application.</p>
+<p>After this you branch from this mode in the “final spinup” (<code class="docutils literal notranslate"><span class="pre">-bgc_spinup</span> <span class="pre">off</span></code> in CLM <code class="docutils literal notranslate"><span class="pre">configure</span></code>, see example below), and run for several hundred simulation years. <a class="reference internal" href="#figure-bgc-pad-spinup-plot-for-1850-gswp3"><span class="std std-numref">Figure 1.5.4</span></a> shows spinup behavior for an 1850 BGC post accelerated decomposition (pAD) case using GSWP3 atmospheric forcing. As before, the criteria that less than 3% of the land surface be in total ecosystem carbon disequilibrium takes the longest to satisfy. It can be difficult to meet this strict criteria in less than 1000 years and users may want to relax this criteria depending on their application.</p>
 <div class="figure align-default" id="id2">
 <span id="figure-bgc-pad-spinup-plot-for-1850-gswp3"></span><img alt="../../_images/image4.png" src="../../_images/image4.png" />
 <p class="caption"><span class="caption-number">Figure 1.5.4 </span><span class="caption-text">BGC pAD spinup plot for a year 1850 case with GSWP3 atmospheric forcing and initialization from the end of the BGC AD spinup case. Variables examined are TOTECOSYSC (total ecosystem carbon), TOTSOMC (total soil organic matter carbon), TOTVEGC (total vegetation carbon), TLAI (total leaf area index), GPP (gross primary production) and TWS (total water storage). Generated using …/tools/contrib/SpinupStability.ncl.</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
@@ -230,12 +229,12 @@
 </div>
 <p>If you use the default initial file and you signficantly change model behavior or atmospheric forcing, and you are concerned about the carbon equilibrium (e.g., TOTECOSYSC, TOTSOMC, TOTVEGC), particularly at high latitudes, then we recommend you put the model back into AD mode to reach a new equilibrium. In this configuration, this will also automatically reseed “dead” plant functional types in the initial file with a bit of leaf carbon to give those plant functional types another chance to grow under the new atmospheric forcing or model conditions.</p>
 <dl class="simple">
-<dt><strong>1. |version| accelerated-decomposition (AD) spinup</strong></dt><dd><p>For the first step of running 200+ years in “-bgc_spinup on” mode, you will setup a case, and then edit the values in env_build.xml and env_run.xml so that the right configuration is turned on and the simulation is setup to run for the required length of simulation time. So do the following:</p>
+<dt><strong>1. |version| accelerated-decomposition (AD) spinup</strong></dt><dd><p>For the first step of running 200+ years in <code class="docutils literal notranslate"><span class="pre">-bgc_spinup</span> <span class="pre">on</span></code> mode, you will setup a case, and then edit the values in env_build.xml and env_run.xml so that the right configuration is turned on and the simulation is setup to run for the required length of simulation time. So do the following:</p>
 </dd>
 </dl>
 <div class="section" id="example-ad-spinup-simulation-for-version-bgc">
-<h2><span class="section-number">1.5.7.1. </span>Example:: AD_SPINUP Simulation for CTSM1-BGC<a class="headerlink" href="#example-ad-spinup-simulation-for-version-bgc" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">scripts</span>
+<h2><span class="section-number">1.5.7.1. </span>Example: AD_SPINUP Simulation for CTSM1-BGC<a class="headerlink" href="#example-ad-spinup-simulation-for-version-bgc" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">cd</span> <span class="n">cime</span><span class="o">/</span><span class="n">scripts</span>
 <span class="o">&gt;</span> <span class="o">./</span><span class="n">create_newcase</span> <span class="o">-</span><span class="n">case</span> <span class="n">BGC_spinup</span> <span class="o">-</span><span class="n">res</span> <span class="n">f19_g17_gl4</span> <span class="o">-</span><span class="n">compset</span> <span class="n">I1850Clm50BgcCropCru</span>
 <span class="o">&gt;</span> <span class="n">cd</span> <span class="n">BGC_spinup</span>
 <span class="c1"># Change accelerated spinup mode</span>
@@ -257,13 +256,13 @@
 </div>
 <p>Afterwards save the last restart file from this simulation to use in the next step.</p>
 <dl class="simple">
-<dt><strong>2. Final spinup for |version|-BGC</strong></dt><dd><p>Next save the last restart file from this step and use it as the “finidat” file to use for one more spinup for at least 400+ years in normal mode. So do the following:</p>
+<dt><strong>2. Final spinup for |version|-BGC</strong></dt><dd><p>Next save the last restart file from this step and use it as the <code class="docutils literal notranslate"><span class="pre">finidat</span></code> file to use for one more spinup for at least 400+ years in normal mode. So do the following:</p>
 </dd>
 </dl>
 </div>
 <div class="section" id="example-final-clmbgc-spinup-simulation-for-version-bgc">
 <span id="eg-final-clmbgc-spinup"></span><h2><span class="section-number">1.5.7.2. </span>Example: Final CLMBGC Spinup Simulation for CTSM1-BGC<a class="headerlink" href="#example-final-clmbgc-spinup-simulation-for-version-bgc" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd scripts
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt; cd cime/scripts
 &gt; ./create_newcase -case BGC_finalspinup -res f19_g17_gl4 -compset I1850Clm50BgcCropCru
 &gt; cd BGC_finalspinup
 # Now, Copy the last CLM restart file from the earlier case into your run directory
